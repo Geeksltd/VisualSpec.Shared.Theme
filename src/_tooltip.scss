@@ -1,0 +1,5 @@
+// Base class
+.tooltip {
+  font-family:$font-family-monospace;
+  --#{$prefix}tooltip-font-size:#{$font-size-xs};
+}

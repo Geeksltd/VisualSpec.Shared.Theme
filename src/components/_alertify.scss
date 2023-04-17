@@ -1,0 +1,27 @@
+﻿.alertify-log {
+    //margin-bottom: 80px;
+    font-size: 15px;
+    background: #2A9E3E;
+    padding: 25px 64px 28px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    height: 72px;
+    border: 1px solid #2A9E3E;
+
+    i {
+        position: absolute;
+        top: 24px;
+        font-size: 24px;
+        left: 24px;
+        background-image: url('../../../img/svg/circle-check.svg');
+        width:24px;
+        height:24px;
+    }
+}
+
+
+.alertify.logs {
+    bottom: 24px;
+    right: 24px;
+    width: 383px;
+}

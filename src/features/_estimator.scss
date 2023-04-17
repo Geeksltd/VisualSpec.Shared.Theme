@@ -1,0 +1,72 @@
+﻿.select-estimate-size-list{
+    @extend .d-flex;
+   
+    div{
+        @extend .border;
+        @extend .border-black;
+        @extend .form-text;
+        @extend .text-black;
+        @extend .py-2;
+        @extend .lh-1;
+        @extend .align-middle;
+        @extend .d-inline-block;
+        @extend .text-center;
+        width:2.875rem;
+        border-radius:$border-radius-2xl;
+
+        &.selected, &.highlighted{
+            @extend .bg-black;
+            @extend .text-white;
+        }
+    }
+}
+
+
+.pages-estimates-list {
+
+    th {
+        @extend .text-center;
+    }
+
+
+    .pages-estimates-list__col-page {
+        width: 5%;
+    }
+
+    .pages-estimates-list__col-user-type {
+        width: 10%;
+    }
+
+    .pages-estimates-list__col-route {
+        width: 10%;
+    }
+
+    .pages-estimates-list__col-rating {
+        width: 155px;
+        text-align: center;
+    }
+
+    .pages-estimates-list__col-team-day-estimate {
+        width: 120px;
+    }
+
+    .pages-estimates-list__col-override {
+        width: 200px;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .pages-estimates-list__col-features {
+        width: 200px;
+    }
+
+    .pages-estimates-list__col-help {
+        width: 100px;
+    }
+
+    .pages-estimates-list__col-hidden-save {
+        display: none;
+    }
+}

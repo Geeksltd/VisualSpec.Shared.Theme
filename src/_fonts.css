@@ -1,0 +1,18 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap");
+@font-face {
+  font-family: "MuseoSans-300";
+  src: url("http://hub.visualspec.local.com:8685/fonts/museo-sans/MuseoSansCnd-300-webfont.woff2") format("woff2"), url("../../fonts/museo-sans/MuseoSansCnd-300-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MuseoSans-700";
+  src: url("http://hub.visualspec.local.com:8685/fonts/museo-sans/MuseoSansCnd-700-webfont.woff2") format("woff2"), url("../../fonts/museo-sans/MuseoSansCnd-700-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("http://hub.visualspec.local.com:8685/fonts/metropolis/Metropolis-Light.otf");
+  font-weight: normal;
+  font-style: normal; }

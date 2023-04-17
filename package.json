@@ -1,0 +1,25 @@
+{
+  "name": "visualspec.shared.theme",
+  "version": "1.0.0",
+  "description": "UI theme of visualspec package",
+  "main": "theme.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geeksltd/VisualSpec.Shared.Theme.git"
+  },
+  "keywords": [
+    "theme",
+    "scss",
+    "css",
+    "font"
+  ],
+  "author": "Ehsan vali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geeksltd/VisualSpec.Shared.Theme/issues"
+  },
+  "homepage": "https://github.com/Geeksltd/VisualSpec.Shared.Theme#readme"
+}
