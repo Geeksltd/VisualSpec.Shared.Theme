@@ -12,6 +12,9 @@
     "css",
     "font"
   ],
+  "engines": {
+    "yarn": ">= 1.0.0"
+  },
    "author": "Geeks Ltd",
   "license": "GPL-3.0",
   "private": false,
