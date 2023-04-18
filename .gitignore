@@ -1,1 +1,12 @@
 node_modules/
+.git
+.vscode
+.vs/
+localTest.Matt.bat
+wwwroot/lib
+lib/
+compiled/
+src/**/*.js
+src/**/*.js.map
+!src/bundling/*.js
+yarn.lock
