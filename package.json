@@ -22,4 +22,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "5.2.3"
   }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
