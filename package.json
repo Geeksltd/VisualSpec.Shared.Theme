@@ -2,10 +2,6 @@
   "name": "visualspec.shared.theme",
   "version": "1.0.0",
   "description": "UI theme of visualspec package",
-  "main": "theme.scss",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Geeksltd/VisualSpec.Shared.Theme.git"
@@ -16,10 +12,14 @@
     "css",
     "font"
   ],
-  "author": "Ehsan vali",
-  "license": "ISC",
+  "author": "Geeks Ltd",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/Geeksltd/VisualSpec.Shared.Theme/issues"
   },
-  "homepage": "https://github.com/Geeksltd/VisualSpec.Shared.Theme#readme"
+  "homepage": "https://github.com/Geeksltd/VisualSpec.Shared.Theme#readme",
+  "devDependencies": {
+	  "@popperjs/core": "^2.11.6",
+	  "bootstrap": "5.2.3"
+  }
 }
