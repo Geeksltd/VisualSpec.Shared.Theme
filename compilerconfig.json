@@ -1,0 +1,9 @@
+[
+	{
+		"outputFile": "dist/theme.css",
+		"inputFile": "src/theme.scss",
+		"options": {
+			"sourceMap": false
+		}
+	}
+]
