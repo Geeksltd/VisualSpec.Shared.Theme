@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Geeksltd/VisualSpec.Shared.Theme#readme",
   "devDependencies": {
-	  "@popperjs/core": "^2.11.6",
-	  "bootstrap": "5.2.3"
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "5.2.3"
   }
 }
