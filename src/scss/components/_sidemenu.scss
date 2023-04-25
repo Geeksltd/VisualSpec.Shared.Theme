@@ -1,0 +1,166 @@
+﻿//$side-bar-background-color: $white;
+
+.sidemenu-wrapper {
+    
+    @extend .d-flex;
+
+    .sidebar {
+        //background:$side-bar-background-color;
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .flex-shrink-0;
+        @extend .bg-white;
+        width: 5.75rem;
+
+        .brand {
+            @extend .d-block;
+            @extend .my-3;
+            @extend .py-3;
+            @extend .link-dark;
+            @extend .text-decoration-none;
+            //TODO: this line must change to relative path. this is becasuse cors
+            background: url("../icons/logo.svg") center no-repeat;
+        }
+
+        .dropdownMainmenu{
+             @extend .pt-5;
+             @extend .position-fixed;
+             @extend .vh-100;
+             @extend .bg-primary;
+             transform:translate(5.75rem, 0px) !important;
+             --#{$prefix}dropdown-border-radius: 0 #{$border-radius-2xl} #{$border-radius-2xl} 0;
+             --#{$prefix}dropdown-link-active-bg:#ffffff4d;
+             --#{$prefix}dropdown-link-active-color:#{$black};
+             --#{$prefix}dropdown-link-hover-color:#{$white};
+             --#{$prefix}dropdown-link-hover-bg:#{$black};
+             --#{$prefix}dropdown-link-color:$white;
+             --#{$prefix}dropdown-item-padding-x:#{$spacer*1.5};
+             --#{$prefix}dropdown-item-padding-y:#{$spacer*.35};
+             --#{$prefix}dropdown-color:#{$white};
+             li {
+                 @extend .mb-2;
+                 .dropdown-item{
+                     @extend .mx-1;
+                     transition: $transition-base;
+                     width:unset;
+                     font-size:$font-size-lg;
+                     font-family:$font-family-museo-300;
+                     border-radius:$border-radius-2xl;
+                 }
+             }
+        }
+
+        .dropdownMainMenuHover{
+              @extend .d-block;
+              transform:translate(5.75rem, 0px) !important;
+              inset: 0px auto auto 0px;
+        }
+
+        ul.nav {
+            --#{$prefix}nav-link-padding-x:0;
+           /* @extend .nav-pills;*/
+            @extend .flex-column;
+            @extend .mb-auto;
+            @extend .text-center;
+            @extend .mt-4;
+
+            .projectName {
+                background-color: $yellow-300;
+                @extend .mt-1;
+                @extend .mx-1;
+                @extend .mb-3;
+                @extend .nav-item;
+                @extend .rounded;
+                
+                 .nav-link {
+                    --#{$prefix}nav-link-font-size:#{$font-size-base*.75};
+                    --#{$prefix}nav-link-font-weight:#{$font-weight-light};
+                    @extend .text-break;
+                    @extend .m-auto;
+                    max-width: 4rem;
+                }
+            }
+
+            .nav-item {
+                &:active,&.active{
+                    .nav-link{
+                        .img-container{
+                            @extend .bg-black;
+                             img {
+                                 @extend .bg-primary;
+                             }
+                         }
+                    }
+                }
+                
+                &.dropdown, .dropdown {
+                    min-width :unset;
+                    .dropdown-menu{
+                       @extend .dropdownMainmenu;
+                    }
+                    &:hover {
+                        .dropdown-menu{
+                                @extend .dropdownMainMenuHover;
+                            }
+                        }
+                }
+
+                .nav-link {
+                    @extend .py-3;
+
+                    .img-container{
+                       @extend .py-1;
+                       @extend .px-2;
+                       @extend .mx-2;
+                       transition: $transition-base;
+                       border-radius:$border-radius-2xl;
+                        img{
+                            @extend .py-3;
+                            @extend .px-4;
+                            @extend .bg-black;
+                     
+                        }
+                    }
+                    
+                    &:hover {
+                        .img-container {
+                            @extend .bg-primary;
+                        }
+                     }
+
+                    span {
+                        @extend .d-block;
+                        @extend .mt-1;
+                        font-family:$font-family-museo-300;
+                    }
+                }
+            }
+        }
+
+        .profile{
+            @extend .d-flex;
+            @extend .flex-column;
+            @extend .p-3;
+            .dropdown{
+                @extend .p-3;
+                @extend .rounded;
+                background-color:#{$yellow-300};
+                min-width:unset;
+                .dropdown-menu {
+                       @extend .dropdownMainmenu;
+                 }
+                &:hover{
+                    @extend .bg-primary;
+                }
+               
+            }
+             &:hover {
+                 .dropdown{
+                        .dropdown-menu{
+                                @extend .dropdownMainMenuHover;
+                        }
+                 }
+             }
+        }
+    }
+}

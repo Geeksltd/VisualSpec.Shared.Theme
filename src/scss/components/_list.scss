@@ -1,0 +1,138 @@
+﻿///<reference path="../../../../lib/bootstrap/grid">
+///<reference path="../../utilities/utilities">
+
+.empty-list {
+    @extend .ms-4;
+}
+.table td.fit, 
+.table th.fit {
+   
+}
+.grid {
+    @extend .table;
+    @extend .table-hover;
+    @extend .align-middle;
+    --#{$prefix}body-font-family:#{$font-family-monospace};
+    font-family:var(--#{$prefix}body-font-family);
+
+    thead {
+        background-color: $gray-200;
+
+        tr {
+            th {
+                @extend .py-2;
+                line-height:$line-height-base * 1.165;
+                @extend .ps-4;
+                font-family:$font-family-museo-700;
+                font-size:$font-size-base * 1.125;
+                &.fit{
+                     white-space: nowrap;
+                     width: 1%;
+                }
+            }
+        }
+    }
+
+    tbody {
+        
+        tr{
+            td{
+                padding-top:$spacer*.875;
+                padding-bottom:$spacer*.875;
+                @extend .ps-4;
+                &.fit{
+                     white-space: nowrap;
+                     width: 1%;
+                }
+               &.actions a[name="Edit"],&.actions button[name="Edit"] {
+                    @extend .btn;
+                    @extend .btn-secondary;
+                    @extend .edit-item-btn;
+                }
+
+               &.actions a[name="Delete"],&.actions button[name="Delete"] {
+                    @extend .delete-item-btn;
+                }
+
+               .badge{
+                   @extend .me-1;
+                   @extend .mb-1;
+                   --#{$prefix}badge-font-weight:#{$font-weight-light};
+                   --#{$prefix}badge-font-size : #{$font-size-xs};
+                   /*font-size:;*/
+               }
+            }
+        }
+    }
+}
+
+.grid-view {
+    @extend .bg-white;
+    @extend .rounded;
+    @extend .card;
+    @extend .d-block;
+    @extend .mb-4;
+
+    .grid-wrapper{
+        @extend .overflow-auto;
+    }
+
+    .buttons-row {
+        &.top-buttons-row {
+            @extend .mt-2;
+            @extend .me-4;
+            @extend .float-end;
+            @extend .p-4;
+            &.top-buttons-row{
+               @extend .pt-3;
+               @extend .pe-3;
+               @extend .pb-0;
+            }
+        }
+    }
+
+    h2 {
+        /*@extend .mt-2;
+        @extend .mb-0;
+        @extend .p-4;*/
+        @extend .card-header;
+        @extend .bg-transparent;
+    }
+
+    .search {
+        @extend .card-body;
+        @extend .align-items-center;
+        /*       @extend .d-flex;*/
+        .form-group {
+            & > .group-control {
+                @extend .col-12;
+                & > input {
+                    @extend .w-100;
+                }
+            }
+        }
+
+        &.inline-search {
+            @extend .d-flex;
+            @extend .align-items-center;
+            .form-group{
+                @extend .mb-0;
+            }
+        }
+
+        .buttons-row{
+            .buttons{
+                button{
+                    @extend .btn;
+                    @extend .btn-secondary;
+                    @extend .ms-3;
+                }
+            }
+        }
+    }
+
+    .button-row {
+        
+        /* @extend .card-footer;*/
+    }
+}
