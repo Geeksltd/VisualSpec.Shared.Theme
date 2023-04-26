@@ -1,11 +1,17 @@
 {
   "name": "@Geeksltd/visualspec.shared.theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "UI theme of visualspec package",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Geeksltd/VisualSpec.Shared.Theme.git"
   },
+   "files": [
+    "dist"و
+    "src",
+    "package-lock.json",
+    "package.json"
+  ]
   "keywords": [
     "theme",
     "scss",
