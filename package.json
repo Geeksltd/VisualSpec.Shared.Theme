@@ -10,7 +10,8 @@
     "dist",
     "src",
     "package-lock.json",
-    "package.json"
+    "package.json",
+    "README.md"
   ]
   "keywords": [
     "theme",
