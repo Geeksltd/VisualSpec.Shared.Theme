@@ -7,7 +7,7 @@
     "url": "git+https://github.com/Geeksltd/VisualSpec.Shared.Theme.git"
   },
    "files": [
-    "dist"و
+    "dist",
     "src",
     "package-lock.json",
     "package.json"
