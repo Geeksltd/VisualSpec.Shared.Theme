@@ -12,7 +12,7 @@
             @extend .btn;
             @extend .p-2;
              //TODO: this line must change to relative path. this is becasuse cors
-            background: url("../icons/close.svg") center no-repeat;
+            background: url("/lib/visualspec.shared.theme/dist/icons/close.svg") center no-repeat;
 
             i {
                 display: none;

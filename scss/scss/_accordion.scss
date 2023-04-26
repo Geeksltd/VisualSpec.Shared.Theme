@@ -1,7 +1,7 @@
 .accordion{
     //TODO: this line must change to relative path. this is becasuse cors
-   --#{$prefix}accordion-btn-icon:url(../icons/arrow-down.svg);
-   --#{$prefix}accordion-btn-active-icon : url(../icons/arrow-down.svg);
+   --#{$prefix}accordion-btn-icon:url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
+   --#{$prefix}accordion-btn-active-icon : url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
 }
 .accordion-button {
   position: relative;

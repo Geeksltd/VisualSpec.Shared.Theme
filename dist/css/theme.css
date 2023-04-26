@@ -4,7 +4,7 @@
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */ /*@import "../../lib/bootstrap/scss/variables";*/
+ */ /*@import "../bootstrap/scss/variables";*/
 /*@import "vendor/rfs";*/
 /*@import "mixins/deprecate";*/
 /*@import "mixins/breakpoints";
@@ -2921,7 +2921,7 @@ textarea.form-control-lg {
 
 .bootstrap-select button.dropdown-toggle {
   border-radius: 0px;
-  background-image: url(/img/svg/arrow-down.svg);
+  background-image: url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-origin: content-box;
@@ -2931,7 +2931,7 @@ textarea.form-control-lg {
 }
 
 .dropdown-toggle::after {
-  background-image: url(/img/svg/arrow-down.svg);
+  background-image: url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
   border: 0px !important;
 }
 
@@ -3004,7 +3004,7 @@ a.dropdown-item.selected span.text {
   font-family: Metropolis, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   font-weight: bold;
   width: 185px !important;
-  background-image: url(/img/svg/search.svg);
+  background-image: url(/lib/visualspec.shared.theme/dist/icons/search.svg);
   background-repeat: no-repeat;
   background-position-x: 160px;
   background-position-y: center;
@@ -3175,7 +3175,7 @@ input[type='radio'].handled {
   background-color: rgba(109, 123, 123, 0.0509803922);
 }
 .form-group .input-group .input-group-addon .fa-calendar {
-  background: url(/img/svg/calendar.svg) no-repeat center;
+  background: url(/lib/visualspec.shared.theme/dist/icons/calendar.svg) no-repeat center;
   width: 1.125rem;
   height: 1.125rem;
 }
@@ -3690,10 +3690,10 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .add-item-btn i, .add-item-btn img {
-  -webkit-mask-image: url(/img/svg/plus.svg);
+  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/plus.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  mask-image: url(/img/svg/plus.svg) no-repeat center;
+  mask-image: url(/lib/visualspec.shared.theme/dist/icons/plus.svg) no-repeat center;
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #000;
@@ -3706,9 +3706,9 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .edit-item-btn i, .grid tbody tr td.actions a[name=Edit] i, .grid tbody tr td.actions button[name=Edit] i, .edit-item-btn img, .grid tbody tr td.actions a[name=Edit] img, .grid tbody tr td.actions button[name=Edit] img {
-  -webkit-mask-image: url(/img/svg/edit.svg);
+  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/edit.svg);
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/img/svg/edit.svg) no-repeat center;
+  mask-image: url(/lib/visualspec.shared.theme/dist/icons/edit.svg) no-repeat center;
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #000;
@@ -3721,9 +3721,9 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .delete-item-btn i, .grid tbody tr td.actions a[name=Delete] i, .grid tbody tr td.actions button[name=Delete] i, .delete-item-btn img, .grid tbody tr td.actions a[name=Delete] img, .grid tbody tr td.actions button[name=Delete] img {
-  -webkit-mask-image: url(/img/svg/bin.svg);
+  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/bin.svg);
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/img/svg/bin.svg) no-repeat center;
+  mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/bin.svg) no-repeat center;
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #e24242;
@@ -3736,9 +3736,9 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .help-btn i, .help-btn img {
-  -webkit-mask-image: url(/img/svg/help.svg);
+  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/help.svg);
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/img/svg/help.svg) no-repeat center;
+  mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/help.svg) no-repeat center;
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #000;
@@ -5167,7 +5167,7 @@ input[type='radio'].handled {
   border: 0px;
   background-color: transparent;
   padding-top: 10px;
-  background-image: url(/img/svg/info-circle.svg);
+  background-image: url(/lib/visualspec.shared.theme/dist/icons/info-circle.svg);
   height: 17px;
   width: 17px;
   background-repeat: no-repeat;
@@ -5767,8 +5767,8 @@ input[type='radio'].handled {
 }
 
 .accordion {
-  --bs-accordion-btn-icon:url(/img/svg/arrow-down.svg);
-  --bs-accordion-btn-active-icon: url(/img/svg/arrow-down.svg);
+  --bs-accordion-btn-icon:url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
+  --bs-accordion-btn-active-icon: url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
 }
 
 .accordion-button {
@@ -7050,7 +7050,7 @@ input[type='radio'].handled {
   font-family: "MuseoSans-300", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .modal .modal-header .close {
-  background: url("/img/svg/close.svg") center no-repeat;
+  background: url("/lib/visualspec.shared.theme/dist/icons/close.svg") center no-repeat;
 }
 .modal .modal-header .close i {
   display: none;
@@ -8234,7 +8234,7 @@ input[type='radio'].handled {
 }
 .left-menu-tree nav h4:first-child span:first-child, .left-menu-tree nav .h4:first-child span:first-child {
   /*@extend .accordion-button;*/
-  background: url("/img/svg/arrow-down.svg") center no-repeat;
+  background: url("/lib/visualspec.shared.theme/dist/icons/arrow-down.svg") center no-repeat;
 }
 .left-menu-tree nav h4:first-child a:first-of-type, .left-menu-tree nav .h4:first-child a:first-of-type {
   text-decoration: none;
@@ -8246,13 +8246,13 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .left-menu-tree nav h4:first-child .add-item-btn:last-child i, .left-menu-tree nav .h4:first-child .add-item-btn:last-child i {
-  background: url("/img/svg/plus.svg") no-repeat;
+  background: url("/lib/visualspec.shared.theme/dist/icons/plus.svg") no-repeat;
 }
 .scope-treeview nav h4:first-child, .scope-treeview nav .h4:first-child {
   --bs-card-title-spacer-y: 0;
 }
 .scope-treeview nav h4:first-child span:first-child, .scope-treeview nav .h4:first-child span:first-child {
-  background: url("/img/svg/arrow-down.svg") center no-repeat;
+  background: url("/lib/visualspec.shared.theme/dist/icons/arrow-down.svg") center no-repeat;
 }
 .scope-treeview nav h4:first-child a:first-of-type, .scope-treeview nav .h4:first-child a:first-of-type {
   text-decoration: none;
@@ -8261,7 +8261,7 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .scope-treeview nav h4:first-child .scope-treeview__add-item:last-child i, .scope-treeview nav .h4:first-child .scope-treeview__add-item:last-child i {
-  background: url("/img/svg/plus.svg") no-repeat;
+  background: url("/lib/visualspec.shared.theme/dist/icons/plus.svg") no-repeat;
 }
 .scope-treeview nav ul li {
   --bs-list-group-item-padding-y:1rem;
@@ -8273,7 +8273,7 @@ input[type='radio'].handled {
   --bs-body-font-weight:300;
 }
 .scope-treeview nav ul li .treeview-node__title .treeview-node__toggle-actions {
-  background: url("/img/svg/more.svg") center no-repeat padding-box;
+  background: url("/lib/visualspec.shared.theme/dist/icons/more.svg") center no-repeat padding-box;
   width: 1.25rem;
   height: 1.25rem;
   transform: rotate(90deg);
@@ -8302,7 +8302,7 @@ input[type='radio'].handled {
   width: 5.75rem;
 }
 .sidemenu-wrapper .sidebar .brand {
-  background: url("/img/svg/logo.svg") center no-repeat;
+  background: url("/lib/visualspec.shared.theme/dist/icons/logo.svg") center no-repeat;
 }
 .sidemenu-wrapper .sidebar .dropdownMainmenu, .sidemenu-wrapper .sidebar .profile .dropdown .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .nav-item.dropdown .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .dropdown.projectName .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .nav-item .dropdown .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .projectName .dropdown .dropdown-menu {
   transform: translate(5.75rem, 0px) !important;
@@ -8361,7 +8361,7 @@ input[type='radio'].handled {
   height: 2rem;
 }
 .datepicker table thead tr th.prev span {
-  background-image: url("/img/svg/caret--left.svg");
+  background-image: url("/lib/visualspec.shared.theme/dist/icons/caret--left.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -8371,7 +8371,7 @@ input[type='radio'].handled {
   font-family: "MuseoSans-700", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .datepicker table thead tr th.next span {
-  background-image: url("/img/svg/caret--right.svg");
+  background-image: url("/lib/visualspec.shared.theme/dist/icons/caret--right.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -8408,7 +8408,7 @@ input[type='radio'].handled {
   border: none;
 }
 .timepicker div.timepicker-picker table tr td a span.fa-chevron-up {
-  background-image: url("/img/svg/arrow-up.svg");
+  background-image: url("/lib/visualspec.shared.theme/dist/icons/arrow-up.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -8419,7 +8419,7 @@ input[type='radio'].handled {
   background-color: rgba(109, 123, 123, 0.1019607843);
 }
 .timepicker div.timepicker-picker table tr td a span.fa-chevron-down {
-  background-image: url("/img/svg/arrow-down.svg");
+  background-image: url("/lib/visualspec.shared.theme/dist/icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -8500,7 +8500,7 @@ input[type='radio'].handled {
   top: 24px;
   font-size: 24px;
   left: 24px;
-  background-image: url("/img/svg/circle-check.svg");
+  background-image: url("/lib/visualspec.shared.theme/dist/icons/circle-check.svg");
   width: 24px;
   height: 24px;
 }
@@ -13332,19 +13332,4 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   .d-print-none {
     display: none !important;
   }
-}
-.alertify-log i {
-  position: absolute;
-  top: 24px;
-  font-size: 24px;
-  left: 24px;
-  background-image: url("/img/svg/circle-check.svg");
-  width: 24px;
-  height: 24px;
-}
-
-.alertify.logs {
-  bottom: 24px;
-  right: 24px;
-  width: 383px;
 }

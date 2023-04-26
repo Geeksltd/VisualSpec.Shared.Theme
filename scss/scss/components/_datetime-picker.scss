@@ -9,7 +9,7 @@
 
     th.prev span {
         //TODO: this line must change to relative path. this is becasuse cors
-        background-image: url('../icons/caret--left.svg');
+        background-image: url('/lib/visualspec.shared.theme/dist/icons/caret--left.svg');
         background-repeat: no-repeat;
         background-position: center center;
     }
@@ -22,7 +22,7 @@
 
     th.next span {
         //TODO: this line must change to relative path. this is becasuse cors
-        background-image: url('../icons/caret--right.svg');
+        background-image: url('/lib/visualspec.shared.theme/dist/icons/caret--right.svg');
         background-repeat: no-repeat;
         background-position: center center;
     }
@@ -74,7 +74,7 @@
 
         span.fa-chevron-up {
             //TODO: this line must change to relative path. this is becasuse cors
-            background-image: url('../icons/arrow-up.svg');
+            background-image: url('/lib/visualspec.shared.theme/dist/icons/arrow-up.svg');
             background-repeat: no-repeat;
             background-position: center center;
 
@@ -89,7 +89,7 @@
 
         span.fa-chevron-down {
             //TODO: this line must change to relative path. this is becasuse cors
-            background-image: url('../icons/arrow-down.svg');
+            background-image: url('/lib/visualspec.shared.theme/dist/icons/arrow-down.svg');
             background-repeat: no-repeat;
             background-position: center center;
 

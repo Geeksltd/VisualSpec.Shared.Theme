@@ -19,7 +19,7 @@
             @extend .link-dark;
             @extend .text-decoration-none;
             //TODO: this line must change to relative path. this is becasuse cors
-            background: url("../icons/logo.svg") center no-repeat;
+            background: url("/lib/visualspec.shared.theme/dist/icons/logo.svg") center no-repeat;
         }
 
         .dropdownMainmenu{

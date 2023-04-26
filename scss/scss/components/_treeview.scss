@@ -22,7 +22,7 @@
                         @extend .px-2;
                         @extend .py-1;
                         @extend .m-2;
-                        background: url("../icons/arrow-down.svg") center no-repeat;
+                        background: url("/lib/visualspec.shared.theme/dist/icons/arrow-down.svg") center no-repeat;
                     }
                 }
 
@@ -43,7 +43,7 @@
                      &:last-child {
                         @extend .btn-action-i;
                         i {
-                            background: url("../icons/plus.svg") no-repeat;
+                            background: url("/lib/visualspec.shared.theme/dist/icons/plus.svg") no-repeat;
                         }
                     }
 
@@ -88,7 +88,7 @@
                         @extend .py-1;
                         @extend .m-2;
                          //TODO: this line must change to relative path. this is becasuse cors
-                        background: url("../icons/arrow-down.svg") center no-repeat;
+                        background: url("/lib/visualspec.shared.theme/dist/icons/arrow-down.svg") center no-repeat;
                     }
                 }
 
@@ -104,7 +104,7 @@
                         @extend .btn-action-i;
                         i {
                              //TODO: this line must change to relative path. this is becasuse cors
-                            background: url("../icons/plus.svg") no-repeat;
+                            background: url("/lib/visualspec.shared.theme/dist/icons/plus.svg") no-repeat;
                         }
                     }
 
@@ -143,7 +143,7 @@
                     .treeview-node__toggle-actions {
                         @extend .me-3;
                          //TODO: this line must change to relative path. this is becasuse cors
-                        background:url('../icons/more.svg') center no-repeat padding-box;
+                        background:url('/lib/visualspec.shared.theme/dist/icons/more.svg') center no-repeat padding-box;
                         width:1.25rem;
                         height:1.25rem;
                         transform:rotate(90deg);

@@ -115,11 +115,11 @@
         @extend .btn-secondary;
             i,img {
                 //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(../icons/plus.svg);
+                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/plus.svg);
                 -webkit-mask-repeat:no-repeat;
                 -webkit-mask-position:center;
                 //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(../icons/plus.svg) no-repeat center;
+                mask-image: url(/lib/visualspec.shared.theme/dist/icons/plus.svg) no-repeat center;
                 mask-repeat:no-repeat;
                 mask-position:center;
                 background-color:$black;
@@ -136,10 +136,10 @@
         @extend .btn-secondary;
             i,img {
                   //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(../icons/edit.svg);
+                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/edit.svg);
                 -webkit-mask-repeat:no-repeat;
                 //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(../icons/edit.svg) no-repeat center;
+                mask-image: url(/lib/visualspec.shared.theme/dist/icons/edit.svg) no-repeat center;
                 mask-repeat:no-repeat;
                 mask-position:center;
                 background-color:$black;
@@ -157,10 +157,10 @@
             i,img {
                   //TODO: this line must change to relative path. this is becasuse cors
                    //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(../icons/bin.svg);
+                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/icons/bin.svg);
                 -webkit-mask-repeat:no-repeat;
                 //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(../icons/bin.svg) no-repeat center;
+                mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/bin.svg) no-repeat center;
                 mask-repeat:no-repeat;
                 mask-position:center;
                 background-color:$danger;
@@ -180,10 +180,10 @@
      @extend .border-black;
             i,img {
                   //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(../icons/help.svg);
+                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/icons/help.svg);
                 -webkit-mask-repeat:no-repeat;
                 //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(../icons/help.svg) no-repeat center;
+                mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/help.svg) no-repeat center;
                 mask-repeat:no-repeat;
                 mask-position:center;
                 background-color:$black;
