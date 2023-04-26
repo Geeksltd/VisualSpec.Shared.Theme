@@ -1,0 +1,40 @@
+.modal {
+    --#{$prefix}modal-header-border-width:0;
+    .modal-title {
+        @extend .h3;
+        i{
+            font-family:$font-family-museo-300;
+        }
+    }
+
+    .modal-header {
+        .close {
+            @extend .btn;
+            @extend .p-2;
+             //TODO: this line must change to relative path. this is becasuse cors
+            background: url("../icons/close.svg") center no-repeat;
+
+            i {
+                display: none;
+            }
+        }
+    }
+
+    .modal-body {
+       --#{$prefix}modal-padding:0;
+
+        .container-fluid {
+            @extend .p-0;
+
+            .form-body{
+                @extend .p-4;
+                @extend .pt-0;
+            }
+
+            .buttons-row {
+                @extend .modal-footer;
+                @extend .p-3;
+            }
+        }
+    }
+}

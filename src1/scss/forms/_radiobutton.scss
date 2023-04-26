@@ -1,0 +1,123 @@
+﻿
+.radio-helper {
+    display:none!important;
+}
+.form-check-input {
+    opacity: 100%!important;
+    @extend .mt-2;
+    background-size: auto;
+    &:hover{
+        border-color:$black;
+    }
+  
+      &:checked:disabled , :checked .disabled {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"> <circle id="Ellipse_411" data-name="Ellipse 411" cx="8" cy="8" r="8" fill="#{$gray}" /></svg>') center center no-repeat;
+            outline: none;
+            background-color: #0000004D;
+      }
+       &:checked + .radio-helper + .form-check-label{
+           color:$black;
+           font-weight:bold;
+       }
+}
+
+.form-check-label {
+    margin-top:10px;
+    margin-left:2px;
+}
+
+/*///<reference path="../../utilities/utilities">
+
+
+
+$radio-size: 26px;
+
+.radio-helper {
+    display: inline-block;
+    width: $radio-size;
+    height: $radio-size;
+    border: 1px solid $gray-400;
+    background-color: $input-bg;
+    margin-right: 2px;
+    vertical-align: middle;
+
+    &:hover {
+        border: 1px solid $black;
+    }
+
+    &:focus {
+        border: 1px solid $gray;
+    }
+}
+
+.form-check-label {
+    font-weight: normal;
+    font-family: "Metropolis";
+    color: gray;
+}
+
+input[type='radio'].handled {
+    opacity: 0;
+    position: absolute;
+
+
+    &:focus + .radio-helper {
+        //box-shadow: 0 0 0 0 #fff, 0 0 0 0.2rem adjust-color($black, $alpha: -.5);
+        //border: 2px solid $gray;
+    }
+
+    &:checked + .radio-helper{
+
+        &:before {
+            //background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+            background: url('../../../img/svg/Ellipse 411.svg') center center no-repeat;
+            outline: none;
+            display: inline-block;
+            width: $radio-size;
+            height: $radio-size;
+            content: '';
+            background-color: $black;
+            //border-radius: $input-border-radius;
+            position: relative;
+            left: 1px;
+            top: -1px;
+            float: right;
+        }
+    }
+
+    &:checked + .radio-helper + .form-check-label {
+        font-weight: bold;
+        color: black;
+    }
+
+     &:checked:disabled + .radio-helper,:checked .disabled + .radio-helper {
+        &:before {
+            background: url('../../../img/svg/Ellipse 411-gray.svg') center center no-repeat;
+            outline: none;
+            display: inline-block;
+            width: $radio-size;
+            height: $radio-size;
+            content: '';
+            background-color: #0000000D;
+            //border-radius: $input-border-radius;
+            position: relative;
+            left: 1px;
+            top: -1px;
+            float: right;
+        }
+    }
+
+    &:disabled + .radio-helper, .disabled + .radio-helper {
+        border: 1px solid #00000033;
+
+        &:hover {
+            border: 1px solid #00000033;
+        }
+    }
+
+    &:disabled + .radio-helper + .form-check-label, .disabled + .radio-helper + .form-check-label {
+        font-weight: normal;
+        color: $gray;
+    }
+}
+*/
