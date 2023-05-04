@@ -10,5 +10,12 @@
     }
     .buttons-row{
         @extend .card-footer;
+        .buttons{
+            @extend .w-100;
+            [name="Delete"]{
+                @extend .float-start;
+            }
+            
+        }
     }
 }
