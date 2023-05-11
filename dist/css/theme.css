@@ -148,11 +148,11 @@ h6, .h6, h5, .h5, .left-dashboard-overview .left-dashboard-widget .widget-title,
 }
 
 h1, .h1 {
-  font-size: calc(1.2965rem + 0.558vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 1.715rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -3721,9 +3721,9 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .delete-item-btn i, .grid tbody tr td.actions a[name=Delete] i, .grid tbody tr td.actions button[name=Delete] i, .delete-item-btn img, .grid tbody tr td.actions a[name=Delete] img, .grid tbody tr td.actions button[name=Delete] img {
-  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/bin.svg);
+  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/bin.svg);
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/bin.svg) no-repeat center;
+  mask-image: url(/lib/visualspec.shared.theme/dist/icons/bin.svg) no-repeat center;
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #e24242;
@@ -3736,9 +3736,9 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .help-btn i, .help-btn img {
-  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/help.svg);
+  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/help.svg);
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/lib/visualspec.shared.theme/dist/icons/icons/help.svg) no-repeat center;
+  mask-image: url(/lib/visualspec.shared.theme/dist/icons/help.svg) no-repeat center;
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #000;
@@ -5148,7 +5148,7 @@ input[type='radio'].handled {
   color: rgba(109, 123, 123, 0.6);
 }
 
-.nav.flex-column.nav-tabs, body .wrapper > .content .page .right-panel .content-wrapper .scroll-content .nav.nav-tabs.content, .sidemenu-wrapper .sidebar .nav.nav-tabs.profile, .sidemenu-wrapper .sidebar ul.nav.nav-tabs, .sidemenu-wrapper .nav.nav-tabs.sidebar {
+.nav.flex-column.nav-tabs, .sidemenu-wrapper .sidebar .nav.nav-tabs.profile, .sidemenu-wrapper .sidebar ul.nav.nav-tabs, .sidemenu-wrapper .nav.nav-tabs.sidebar {
   --bs-nav-tabs-border-width:0;
 }
 
@@ -8511,23 +8511,6 @@ input[type='radio'].handled {
   width: 383px;
 }
 
-body .wrapper {
-  grid-template-columns: max-content auto;
-}
-body .wrapper > .content .page {
-  grid-template-columns: 20% 80%;
-}
-body .wrapper > .content .page .left-panel {
-  grid-column: 1/2;
-}
-body .wrapper > .content .page .right-panel {
-  grid-column: 2/2;
-}
-body .wrapper > .content .page .right-panel .content-wrapper {
-  /*.applicationContainer {
-      margin-top: $spacer * 4.5;
-  }*/
-}
 .clearfix::after {
   display: block;
   clear: both;
@@ -8839,7 +8822,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   vertical-align: text-top !important;
 }
 
-.float-start {
+.float-start, .form-module .buttons-row .buttons [name=Delete] {
   float: left !important;
 }
 
@@ -8871,11 +8854,11 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   opacity: 1 !important;
 }
 
-.overflow-auto, .grid-view .grid-wrapper, body .wrapper > .content {
+.overflow-auto, .grid-view .grid-wrapper {
   overflow: auto !important;
 }
 
-.overflow-hidden, body .wrapper {
+.overflow-hidden {
   overflow: hidden !important;
 }
 
@@ -8899,7 +8882,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   display: block !important;
 }
 
-.d-grid, body .wrapper, body .wrapper > .content .page {
+.d-grid {
   display: grid !important;
 }
 
@@ -8915,7 +8898,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   display: table-cell !important;
 }
 
-.d-flex, .pagination, .pagination-size.paging-size, .grid-view .search.inline-search, .left-menu-tree nav h4:first-child, .left-menu-tree nav .h4:first-child, .scope-treeview nav h4:first-child, .scope-treeview nav .h4:first-child, .scope-treeview nav ul li .treeview-node__title, .sidemenu-wrapper, .sidemenu-wrapper .sidebar, .sidemenu-wrapper .sidebar .profile, .left-menu .card .accordion .accordion-item .accordion-header, .left-menu .grid-view .accordion .accordion-item .accordion-header, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-header, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-header, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-menu .form-module .accordion .accordion-item .accordion-header, .left-menu .card .accordion .accordion-item .accordion-body ul li > div, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div, body .wrapper > .content .page .right-panel .content-wrapper .scroll-content .content {
+.d-flex, .pagination, .pagination-size.paging-size, .grid-view .search.inline-search, .left-menu-tree nav h4:first-child, .left-menu-tree nav .h4:first-child, .scope-treeview nav h4:first-child, .scope-treeview nav .h4:first-child, .scope-treeview nav ul li .treeview-node__title, .sidemenu-wrapper, .sidemenu-wrapper .sidebar, .sidemenu-wrapper .sidebar .profile, .left-menu .card .accordion .accordion-item .accordion-header, .left-menu .grid-view .accordion .accordion-item .accordion-header, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-header, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-header, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-menu .form-module .accordion .accordion-item .accordion-header, .left-menu .card .accordion .accordion-item .accordion-body ul li > div, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div {
   display: flex !important;
 }
 
@@ -8947,11 +8930,11 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   position: static !important;
 }
 
-.position-relative, .btn .icon-spec-search, .btn-action .icon-spec-search, .btn-action-i .icon-spec-search, .add-item-btn .icon-spec-search, .edit-item-btn .icon-spec-search, .delete-item-btn .icon-spec-search, .help-btn .icon-spec-search, .modal .modal-header .close .icon-spec-search, .grid tbody tr td.actions a[name=Edit] .icon-spec-search, .grid tbody tr td.actions button[name=Edit] .icon-spec-search, .grid tbody tr td.actions a[name=Delete] .icon-spec-search, .grid tbody tr td.actions button[name=Delete] .icon-spec-search, .grid-view .search .buttons-row .buttons button .icon-spec-search, .left-menu-tree nav h4:first-child .add-item-btn:last-child .icon-spec-search, .left-menu-tree nav .h4:first-child .add-item-btn:last-child .icon-spec-search, .scope-treeview nav h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .scope-treeview nav .h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, body .wrapper > .content, body .wrapper > .content .page .left-panel, body .wrapper > .content .page .right-panel {
+.position-relative, .btn .icon-spec-search, .btn-action .icon-spec-search, .btn-action-i .icon-spec-search, .add-item-btn .icon-spec-search, .edit-item-btn .icon-spec-search, .delete-item-btn .icon-spec-search, .help-btn .icon-spec-search, .modal .modal-header .close .icon-spec-search, .grid tbody tr td.actions a[name=Edit] .icon-spec-search, .grid tbody tr td.actions button[name=Edit] .icon-spec-search, .grid tbody tr td.actions a[name=Delete] .icon-spec-search, .grid tbody tr td.actions button[name=Delete] .icon-spec-search, .grid-view .search .buttons-row .buttons button .icon-spec-search, .left-menu-tree nav h4:first-child .add-item-btn:last-child .icon-spec-search, .left-menu-tree nav .h4:first-child .add-item-btn:last-child .icon-spec-search, .scope-treeview nav h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .scope-treeview nav .h4:first-child .scope-treeview__add-item:last-child .icon-spec-search {
   position: relative !important;
 }
 
-.position-absolute, body .wrapper > .content .page, body .wrapper > .content .page .left-panel .sidebar-wrapper {
+.position-absolute {
   position: absolute !important;
 }
 
@@ -9165,7 +9148,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   width: 75% !important;
 }
 
-.w-100, .subform, .grid-view .search .form-group > .group-control > input, body .wrapper, body .wrapper > .content .page, body .wrapper > .content .page .left-panel .sidebar-wrapper, body .wrapper > .content .page .right-panel {
+.w-100, .subform, .grid-view .search .form-group > .group-control > input, .form-module .buttons-row .buttons {
   width: 100% !important;
 }
 
@@ -9197,7 +9180,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   height: 75% !important;
 }
 
-.h-100, body .wrapper, body .wrapper > .content .page, body .wrapper > .content .page .left-panel .sidebar-wrapper, body .wrapper > .content .page .right-panel, body .wrapper > .content .page .right-panel .content-wrapper, body .wrapper > .content .page .right-panel .content-wrapper .scroll-content {
+.h-100 {
   height: 100% !important;
 }
 
@@ -9225,7 +9208,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   flex-direction: row !important;
 }
 
-.flex-column, .sidemenu-wrapper .sidebar, .sidemenu-wrapper .sidebar ul.nav, .sidemenu-wrapper .sidebar .profile, body .wrapper > .content .page .right-panel .content-wrapper .scroll-content .content {
+.flex-column, .sidemenu-wrapper .sidebar, .sidemenu-wrapper .sidebar ul.nav, .sidemenu-wrapper .sidebar .profile {
   flex-direction: column !important;
 }
 
@@ -9539,7 +9522,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   margin-top: 1rem !important;
 }
 
-.mt-4, .sidemenu-wrapper .sidebar ul.nav, body .wrapper > .content .page .right-panel {
+.mt-4, .sidemenu-wrapper .sidebar ul.nav {
   margin-top: 1.5rem !important;
 }
 
@@ -9575,7 +9558,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   margin-right: 1rem !important;
 }
 
-.me-4, .grid-view .buttons-row.top-buttons-row, body .wrapper > .content .page .right-panel .content-wrapper {
+.me-4, .grid-view .buttons-row.top-buttons-row {
   margin-right: 1.5rem !important;
 }
 
@@ -9603,7 +9586,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   margin-bottom: 0.25rem !important;
 }
 
-.mb-2, .left-dashboard-overview .left-dashboard-widget .widget-data-row, .sidemenu-wrapper .sidebar .dropdownMainmenu li, .sidemenu-wrapper .sidebar ul.nav .nav-item.dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .dropdown.projectName .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .nav-item .dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .projectName .dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar .profile .dropdown .dropdown-menu li, .left-menu .card .accordion .accordion-item, .left-menu .grid-view .accordion .accordion-item, .left-menu .scope-treeview nav .accordion .accordion-item, .scope-treeview .left-menu nav .accordion .accordion-item, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item, .left-menu .form-module .accordion .accordion-item, body .wrapper > .content .page .left-panel .sidebar-wrapper h2, body .wrapper > .content .page .left-panel .sidebar-wrapper .h2 {
+.mb-2, .left-dashboard-overview .left-dashboard-widget .widget-data-row, .sidemenu-wrapper .sidebar .dropdownMainmenu li, .sidemenu-wrapper .sidebar ul.nav .nav-item.dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .dropdown.projectName .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .nav-item .dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .projectName .dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar .profile .dropdown .dropdown-menu li, .left-menu .card .accordion .accordion-item, .left-menu .grid-view .accordion .accordion-item, .left-menu .scope-treeview nav .accordion .accordion-item, .scope-treeview .left-menu nav .accordion .accordion-item, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item, .left-menu .form-module .accordion .accordion-item {
   margin-bottom: 0.5rem !important;
 }
 
@@ -9683,7 +9666,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   padding: 1rem !important;
 }
 
-.p-4, .modal .modal-body .container-fluid .form-body, .modal .modal-body .container-sm .form-body, .modal .modal-body .container-md .form-body, .modal .modal-body .container-lg .form-body, .modal .modal-body .container-xl .form-body, .modal .modal-body .container-xxl .form-body, .grid-view .buttons-row.top-buttons-row, .left-dashboard-overview .left-dashboard-widget, body .wrapper > .content .page .left-panel .sidebar-wrapper {
+.p-4, .modal .modal-body .container-fluid .form-body, .modal .modal-body .container-sm .form-body, .modal .modal-body .container-md .form-body, .modal .modal-body .container-lg .form-body, .modal .modal-body .container-xl .form-body, .modal .modal-body .container-xxl .form-body, .grid-view .buttons-row.top-buttons-row, .left-dashboard-overview .left-dashboard-widget {
   padding: 1.5rem !important;
 }
 
@@ -9799,7 +9782,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
   padding-top: 1.5rem !important;
 }
 
-.pt-5, .sidemenu-wrapper .sidebar .dropdownMainmenu, .sidemenu-wrapper .sidebar ul.nav .nav-item.dropdown .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .dropdown.projectName .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .nav-item .dropdown .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .projectName .dropdown .dropdown-menu, .sidemenu-wrapper .sidebar .profile .dropdown .dropdown-menu, body .wrapper > .content .page .right-panel {
+.pt-5, .sidemenu-wrapper .sidebar .dropdownMainmenu, .sidemenu-wrapper .sidebar ul.nav .nav-item.dropdown .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .dropdown.projectName .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .nav-item .dropdown .dropdown-menu, .sidemenu-wrapper .sidebar ul.nav .projectName .dropdown .dropdown-menu, .sidemenu-wrapper .sidebar .profile .dropdown .dropdown-menu {
   padding-top: 3rem !important;
 }
 
@@ -9936,7 +9919,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
 }
 
 .fs-1 {
-  font-size: calc(1.2965rem + 0.558vw) !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fs-2 {
@@ -13289,7 +13272,7 @@ body .wrapper > .content .page .right-panel .content-wrapper {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 1.715rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-2 {
     font-size: 2rem !important;
