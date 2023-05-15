@@ -17,7 +17,8 @@
                 @extend .h-100;
 
                 .left-panel {
-                    @extend .p-4;
+                    @extend .pt-4;
+                    @extend .p-3;
 
                     .sidebar-wrapper {
                         @extend .w-100;
@@ -25,6 +26,7 @@
 
                         h2 {
                            @extend .mb-2;
+                           @extend .lh-sm;
                         }
                     }
                 }
