@@ -20,7 +20,6 @@
 @import "../../../bootstrap/scss/type";
 @import "../../../bootstrap/scss/images";
 @import "../../../bootstrap/scss/containers";
-@import "containers";
 @import "../../../bootstrap/scss/grid";
 @import "../../../bootstrap/scss/tables";
 @import "../../../bootstrap/scss/forms";
@@ -59,6 +58,7 @@
 @import "../../../bootstrap/scss/offcanvas";
 @import "../../../bootstrap/scss/placeholders";
 @import "components";
+@import "layout";
 
 // Helpers
 @import "../../../bootstrap/scss/helpers";
