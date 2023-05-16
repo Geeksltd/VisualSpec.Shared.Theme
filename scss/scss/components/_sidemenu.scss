@@ -3,6 +3,7 @@
 .sidemenu-wrapper {
     
     @extend .d-flex;
+    @extend .overflow-auto;
 
     .sidebar {
         //background:$side-bar-background-color;

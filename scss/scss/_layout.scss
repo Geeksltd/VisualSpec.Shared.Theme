@@ -1,51 +1,55 @@
 ﻿body {
+ 
     .wrapper {
-        @extend .d-grid;
         @extend .h-100;
-        @extend .overflow-hidden;
+        @extend .w-100;
         @extend .d-flex;
-
-        grid-template-columns: max-content auto;
-
+        overflow-y:hidden;
+       
         & > .content {
-            @extend .overflow-auto;
             @extend .flex-grow-1;
+            overflow-y:hidden;
 
-            .page {
-
-                @extend .d-flex;
+            main{
                 @extend .h-100;
+                .page {
 
-                .left-panel {
-                    @extend .pt-4;
-                    @extend .p-3;
-
-                    .sidebar-wrapper {
-                        @extend .w-100;
-                        @extend .h-100;
-
-                        h2 {
-                           @extend .mb-2;
-                           @extend .lh-sm;
-                        }
-                    }
-                }
-
-                .right-panel {
+                    @extend .d-flex;
                     @extend .h-100;
-                    @extend .pt-5;
-                    @extend .mt-4;
-                    @extend .pe-4;
-                    @extend .flex-grow-1;
 
-                    .content-wrapper {
+                    .left-panel {
+                        @extend .pt-4;
+                        @extend .p-3;
                         @extend .h-100;
+                        min-width:20rem;
 
-                        .scroll-content {
+                        .sidebar-wrapper {
+                            @extend .w-100;
                             @extend .h-100;
+
+                            h2 {
+                               @extend .mb-2;
+                               @extend .lh-sm;
+                            }
                         }
                     }
-                }
+
+                    .right-panel {
+                        @extend .h-100;
+                        @extend .pt-5;
+                        @extend .mt-4;
+                        @extend .pe-4;
+                        @extend .flex-grow-1;
+
+                        .content-wrapper {
+                            @extend .h-100;
+
+                            .scroll-content {
+                                @extend .h-100;
+                            }
+                        }
+                    }
+                }   
             }
         }
     }
