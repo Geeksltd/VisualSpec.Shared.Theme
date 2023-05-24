@@ -2,8 +2,9 @@
 
 .sidemenu-wrapper {
     
-    @extend .d-flex;
-    @extend .overflow-auto;
+    overflow-x:hidden;
+    overflow-y:auto;
+    min-width: 5.75rem;
 
     .sidebar {
         //background:$side-bar-background-color;
@@ -11,7 +12,7 @@
         @extend .flex-column;
         @extend .flex-shrink-0;
         @extend .bg-white;
-        width: 5.75rem;
+        @extend .h-100;
 
         .brand {
             @extend .d-block;

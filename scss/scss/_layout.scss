@@ -4,11 +4,11 @@
         @extend .h-100;
         @extend .w-100;
         @extend .d-flex;
-        overflow-y:hidden;
+        @extend .overflow-hidden;
        
         & > .content {
             @extend .flex-grow-1;
-            overflow-y:hidden;
+            @extend .overflow-hidden;
 
             main{
                 @extend .h-100;
@@ -41,10 +41,11 @@
                         @extend .mt-4;
                         @extend .pe-4;
                         @extend .flex-grow-1;
+                        @extend .overflow-hidden;
 
                         .content-wrapper {
                             @extend .h-100;
-
+                            
                             .scroll-content {
                                 @extend .h-100;
                             }

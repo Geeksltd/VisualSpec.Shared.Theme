@@ -4,10 +4,15 @@
     --#{$prefix}pagination-hover-bg:#{$body-color};
     --#{$prefix}pagination-color: #{$body-color};
     --#{$prefix}pagination-border-color: #{$body-color};
+    --#{$prefix}pagination-padding-x : .6rem;
+    --#{$prefix}pagination-padding-y : .25rem;
+
 
     @extend .d-flex;
     @extend .justify-content-center;
     @extend .mt-3;
+    @extend .me-3;
+
     li {
         @extend .page-item;
         @extend .mx-q;

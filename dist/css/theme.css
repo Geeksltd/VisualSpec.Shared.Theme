@@ -3026,7 +3026,7 @@ a.dropdown-item.selected span.text {
   border-radius: 2rem;
   border: 1px solid black;
   padding: 2px;
-  width: 220px;
+  width: 192px;
 }
 .bs-actionsbox .btn-group .bs-select-all {
   font-size: 12px;
@@ -6005,6 +6005,8 @@ input[type='radio'].handled {
   --bs-pagination-hover-bg:#000;
   --bs-pagination-color: #000;
   --bs-pagination-border-color: #000;
+  --bs-pagination-padding-x: .6rem;
+  --bs-pagination-padding-y: .25rem;
 }
 .pagination li a {
   width: 28px;
@@ -7642,8 +7644,10 @@ input[type='radio'].handled {
   }*/
 }
 
-.sidemenu-wrapper .sidebar {
-  width: 5.75rem;
+.sidemenu-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-width: 5.75rem;
 }
 .sidemenu-wrapper .sidebar .brand {
   background: url("/lib/visualspec.shared.theme/dist/icons/logo.svg") center no-repeat;
@@ -7855,12 +7859,6 @@ input[type='radio'].handled {
   width: 383px;
 }
 
-body .wrapper {
-  overflow-y: hidden;
-}
-body .wrapper > .content {
-  overflow-y: hidden;
-}
 body .wrapper > .content main .page .left-panel {
   min-width: 20rem;
 }
@@ -8207,11 +8205,11 @@ body .wrapper > .content main .page .left-panel {
   opacity: 1 !important;
 }
 
-.overflow-auto, .sidemenu-wrapper {
+.overflow-auto {
   overflow: auto !important;
 }
 
-.overflow-hidden {
+.overflow-hidden, body .wrapper, body .wrapper > .content, body .wrapper > .content main .page .right-panel {
   overflow: hidden !important;
 }
 
@@ -8251,7 +8249,7 @@ body .wrapper > .content main .page .left-panel {
   display: table-cell !important;
 }
 
-.d-flex, .pagination, .pagination-size.paging-size, .grid-view .search.inline-search, .left-menu-tree nav h4:first-child, .left-menu-tree nav .h4:first-child, .scope-treeview nav h4:first-child, .scope-treeview nav .h4:first-child, .scope-treeview nav ul li .treeview-node__title, .sidemenu-wrapper, .sidemenu-wrapper .sidebar, .sidemenu-wrapper .sidebar .profile, .left-menu .card .accordion .accordion-item .accordion-header, .left-menu .grid-view .accordion .accordion-item .accordion-header, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-header, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-header, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-menu .form-module .accordion .accordion-item .accordion-header, .left-menu .card .accordion .accordion-item .accordion-body ul li > div, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div, body .wrapper, body .wrapper > .content main .page {
+.d-flex, .pagination, .pagination-size.paging-size, .grid-view .search.inline-search, .left-menu-tree nav h4:first-child, .left-menu-tree nav .h4:first-child, .scope-treeview nav h4:first-child, .scope-treeview nav .h4:first-child, .scope-treeview nav ul li .treeview-node__title, .sidemenu-wrapper .sidebar, .sidemenu-wrapper .sidebar .profile, .left-menu .card .accordion .accordion-item .accordion-header, .left-menu .grid-view .accordion .accordion-item .accordion-header, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-header, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-header, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-menu .form-module .accordion .accordion-item .accordion-header, .left-menu .card .accordion .accordion-item .accordion-body ul li > div, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div, body .wrapper, body .wrapper > .content main .page {
   display: flex !important;
 }
 
@@ -8533,7 +8531,7 @@ body .wrapper > .content main .page .left-panel {
   height: 75% !important;
 }
 
-.h-100, body .wrapper, body .wrapper > .content main, body .wrapper > .content main .page, body .wrapper > .content main .page .left-panel, body .wrapper > .content main .page .left-panel .sidebar-wrapper, body .wrapper > .content main .page .right-panel, body .wrapper > .content main .page .right-panel .content-wrapper, body .wrapper > .content main .page .right-panel .content-wrapper .scroll-content {
+.h-100, .sidemenu-wrapper .sidebar, body .wrapper, body .wrapper > .content main, body .wrapper > .content main .page, body .wrapper > .content main .page .left-panel, body .wrapper > .content main .page .left-panel .sidebar-wrapper, body .wrapper > .content main .page .right-panel, body .wrapper > .content main .page .right-panel .content-wrapper, body .wrapper > .content main .page .right-panel .content-wrapper .scroll-content {
   height: 100% !important;
 }
 
@@ -8907,7 +8905,7 @@ body .wrapper > .content main .page .left-panel {
   margin-right: 0.5rem !important;
 }
 
-.me-3, .scope-treeview nav ul li .treeview-node__title .treeview-node__toggle-actions {
+.me-3, .pagination, .scope-treeview nav ul li .treeview-node__title .treeview-node__toggle-actions {
   margin-right: 1rem !important;
 }
 
