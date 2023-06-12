@@ -8031,7 +8031,7 @@ body .wrapper > .content main .page .left-panel {
   z-index: 1020;
 }
 
-.sticky-bottom {
+.sticky-bottom, body .wrapper > .content main .page .right-panel footer {
   position: sticky;
   bottom: 0;
   z-index: 1020;
@@ -9157,7 +9157,7 @@ body .wrapper > .content main .page .left-panel {
   padding-right: 0.5rem !important;
 }
 
-.pe-3, .grid-view .buttons-row.top-buttons-row.top-buttons-row {
+.pe-3, .grid-view .buttons-row.top-buttons-row.top-buttons-row, body .wrapper > .content main .page .right-panel footer {
   padding-right: 1rem !important;
 }
 
@@ -9181,7 +9181,7 @@ body .wrapper > .content main .page .left-panel {
   padding-bottom: 0.125rem !important;
 }
 
-.pb-1 {
+.pb-1, body .wrapper > .content main .page .right-panel footer {
   padding-bottom: 0.25rem !important;
 }
 
@@ -9189,7 +9189,7 @@ body .wrapper > .content main .page .left-panel {
   padding-bottom: 0.5rem !important;
 }
 
-.pb-3, .left-menu .card .card-header, .left-menu .grid-view .card-header, .left-menu .scope-treeview nav .card-header, .scope-treeview .left-menu nav .card-header, .left-menu .left-dashboard-overview .left-dashboard-widget .card-header, .left-dashboard-overview .left-menu .left-dashboard-widget .card-header, .left-menu .form-module .card-header, .grid-view .left-menu .card h2, .left-menu .grid-view h2, .grid-view .left-menu .scope-treeview nav h2, .grid-view .scope-treeview .left-menu nav h2, .grid-view .left-menu .left-dashboard-overview .left-dashboard-widget h2, .grid-view .left-dashboard-overview .left-menu .left-dashboard-widget h2, .grid-view .left-menu .card .h2, .left-menu .grid-view .h2, .grid-view .left-menu .scope-treeview nav .h2, .grid-view .scope-treeview .left-menu nav .h2, .grid-view .left-menu .left-dashboard-overview .left-dashboard-widget .h2, .grid-view .left-dashboard-overview .left-menu .left-dashboard-widget .h2, .form-module .left-menu .card h2, .form-module .left-menu .scope-treeview nav h2, .form-module .scope-treeview .left-menu nav h2, .form-module .left-menu .left-dashboard-overview .left-dashboard-widget h2, .form-module .left-dashboard-overview .left-menu .left-dashboard-widget h2, .left-menu .form-module h2, .form-module .left-menu .card .h2, .form-module .left-menu .scope-treeview nav .h2, .form-module .scope-treeview .left-menu nav .h2, .form-module .left-menu .left-dashboard-overview .left-dashboard-widget .h2, .form-module .left-dashboard-overview .left-menu .left-dashboard-widget .h2, .left-menu .form-module .h2 {
+.pb-3, .left-menu .card .card-header, .left-menu .grid-view .card-header, .left-menu .scope-treeview nav .card-header, .scope-treeview .left-menu nav .card-header, .left-menu .left-dashboard-overview .left-dashboard-widget .card-header, .left-dashboard-overview .left-menu .left-dashboard-widget .card-header, .left-menu .form-module .card-header, .grid-view .left-menu .card h2, .left-menu .grid-view h2, .grid-view .left-menu .scope-treeview nav h2, .grid-view .scope-treeview .left-menu nav h2, .grid-view .left-menu .left-dashboard-overview .left-dashboard-widget h2, .grid-view .left-dashboard-overview .left-menu .left-dashboard-widget h2, .grid-view .left-menu .card .h2, .left-menu .grid-view .h2, .grid-view .left-menu .scope-treeview nav .h2, .grid-view .scope-treeview .left-menu nav .h2, .grid-view .left-menu .left-dashboard-overview .left-dashboard-widget .h2, .grid-view .left-dashboard-overview .left-menu .left-dashboard-widget .h2, .form-module .left-menu .card h2, .form-module .left-menu .scope-treeview nav h2, .form-module .scope-treeview .left-menu nav h2, .form-module .left-menu .left-dashboard-overview .left-dashboard-widget h2, .form-module .left-dashboard-overview .left-menu .left-dashboard-widget h2, .left-menu .form-module h2, .form-module .left-menu .card .h2, .form-module .left-menu .scope-treeview nav .h2, .form-module .scope-treeview .left-menu nav .h2, .form-module .left-menu .left-dashboard-overview .left-dashboard-widget .h2, .form-module .left-dashboard-overview .left-menu .left-dashboard-widget .h2, .left-menu .form-module .h2, body .wrapper > .content main .page .right-panel {
   padding-bottom: 1rem !important;
 }
 
@@ -9197,7 +9197,7 @@ body .wrapper > .content main .page .left-panel {
   padding-bottom: 1.5rem !important;
 }
 
-.pb-5, body .wrapper > .content main .page {
+.pb-5 {
   padding-bottom: 3rem !important;
 }
 
@@ -9345,7 +9345,7 @@ body .wrapper > .content main .page .left-panel {
   text-align: left !important;
 }
 
-.text-end {
+.text-end, body .wrapper > .content main .page .right-panel footer, body .wrapper > .content main .page .right-panel footer     p {
   text-align: right !important;
 }
 
@@ -9447,7 +9447,7 @@ body .wrapper > .content main .page .left-panel {
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted {
+.text-muted, body .wrapper > .content main .page .right-panel footer     p {
   --bs-text-opacity: 1;
   color: rgba(109, 123, 123, 0.6) !important;
 }
