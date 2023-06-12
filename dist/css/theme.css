@@ -9345,7 +9345,7 @@ body .wrapper > .content main .page .left-panel {
   text-align: left !important;
 }
 
-.text-end, body .wrapper > .content main .page .right-panel footer, body .wrapper > .content main .page .right-panel footer     p {
+.text-end, body .wrapper > .content main .page .right-panel footer {
   text-align: right !important;
 }
 
@@ -9447,7 +9447,7 @@ body .wrapper > .content main .page .left-panel {
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted, body .wrapper > .content main .page .right-panel footer     p {
+.text-muted, body .wrapper > .content main .page .right-panel footer p, body .wrapper > .content main .page .right-panel footer p a {
   --bs-text-opacity: 1;
   color: rgba(109, 123, 123, 0.6) !important;
 }
