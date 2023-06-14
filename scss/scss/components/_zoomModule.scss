@@ -1,0 +1,28 @@
+﻿.zoom-part-container{
+    @extend .ms-4;
+    @extend .pb-4;
+    button{
+        @extend .btn-action-i;
+        @extend .border;
+        @extend .border-black;
+        @extend .mx-1;
+        width:$spacer*1.8;
+        height:$spacer*1.8;
+        i{
+            width:$spacer*1.45;
+            height:$spacer*1.45;
+        }
+    }
+
+    .zoom-central-btn{
+        background:url(/lib/visualspec.shared.theme/dist/icons/re-centre.svg) center no-repeat;
+    }
+
+    .zoom-in-btn{
+        background:url(/lib/visualspec.shared.theme/dist/icons/zomm-in.svg) center no-repeat;
+    }
+
+    .zoom-out-btn{
+        background:url(/lib/visualspec.shared.theme/dist/icons/zoom-out.svg) center no-repeat;
+    }
+}
