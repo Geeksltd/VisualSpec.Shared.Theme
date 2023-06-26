@@ -8,6 +8,9 @@
     }
 
     .modal-header {
+         i{
+            @extend .fst-normal;
+         }
         .close {
             @extend .btn;
             @extend .p-2;

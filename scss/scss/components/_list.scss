@@ -50,6 +50,12 @@
                     @extend .edit-item-btn;
                 }
 
+               &.actions a[name="View"],&.actions button[name="View"] {
+                    @extend .btn;
+                    @extend .btn-secondary;
+                    @extend .view-item-btn;
+                }
+
                &.actions a[name="Delete"],&.actions button[name="Delete"] {
                     @extend .delete-item-btn;
                 }

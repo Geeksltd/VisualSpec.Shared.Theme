@@ -172,6 +172,48 @@
             }
         text-decoration: none;
 }
+.save-item-btn{
+        @extend .btn-action-i;
+        @extend .btn-success;
+            i,img {
+                  //TODO: this line must change to relative path. this is becasuse cors
+                   //TODO: this line must change to relative path. this is becasuse cors
+                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/save.svg);
+                -webkit-mask-repeat:no-repeat;
+                //TODO: this line must change to relative path. this is becasuse cors
+                mask-image: url(/lib/visualspec.shared.theme/dist/icons/save.svg) no-repeat center;
+                mask-repeat:no-repeat;
+                mask-position:center;
+                background-color:$white;
+            }
+            &:hover{
+                 i,img{
+                    background-color:$white;
+                }
+            }
+        text-decoration: none;
+}
+.view-item-btn{
+        @extend .btn-action-i;
+        @extend .btn-secondary;
+            i,img {
+                  //TODO: this line must change to relative path. this is becasuse cors
+                   //TODO: this line must change to relative path. this is becasuse cors
+                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/eye.svg);
+                -webkit-mask-repeat:no-repeat;
+                //TODO: this line must change to relative path. this is becasuse cors
+                mask-image: url(/lib/visualspec.shared.theme/dist/icons/eye.svg) no-repeat center;
+                mask-repeat:no-repeat;
+                mask-position:center;
+                background-color:$black;
+            }
+            &:hover{
+                 i,img{
+                    background-color:$white;
+                }
+            }
+        text-decoration: none;
+}
 .help-btn{
      @extend .btn-action-i;
      @extend .bg-transparent;
