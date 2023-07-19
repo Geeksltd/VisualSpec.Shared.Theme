@@ -7852,6 +7852,9 @@ input[type='radio'].handled {
   width: 383px;
 }
 
+.zoom-part-container {
+  z-index: 100;
+}
 .zoom-part-container button {
   width: 1.8rem;
   height: 1.8rem;
@@ -7872,6 +7875,7 @@ input[type='radio'].handled {
 .zoom-part-container .zoom-reset-btn {
   background: url(/lib/visualspec.shared.theme/dist/icons/undo.svg) center no-repeat;
 }
+
 body .wrapper > .content main .page .left-panel {
   min-width: 20rem;
 }
@@ -9541,7 +9545,7 @@ body .wrapper > .content main .page .left-panel {
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-white, .grid-view, .sidemenu-wrapper .sidebar, .zoom-part-container :not(:root):fullscreen::backdrop {
+.bg-white, .grid-view, .sidemenu-wrapper .sidebar, :not(:root):fullscreen::backdrop {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
