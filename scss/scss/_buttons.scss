@@ -111,6 +111,9 @@
     height: $spacer* 1.7 !important;
 }
 .add-item-btn{
+    
+     --#{$prefix}btn-line-height : #{$spacer*1.75};
+
         @extend .btn-action-i;
         @extend .btn-secondary;
             i,img {

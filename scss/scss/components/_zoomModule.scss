@@ -1,6 +1,7 @@
 ﻿.zoom-part-container{
     @extend .ms-4;
     @extend .pb-4;
+    z-index:100;
     button{
         @extend .btn-action-i;
         @extend .border;
@@ -24,5 +25,13 @@
 
     .zoom-out-btn{
         background:url(/lib/visualspec.shared.theme/dist/icons/zoom-out.svg) center no-repeat;
+    }
+
+    .zoom-reset-btn {
+        background: url(/lib/visualspec.shared.theme/dist/icons/undo.svg) center no-repeat;
+    }
+
+    :not(:root):fullscreen::backdrop {
+       @extend .bg-white;
     }
 }

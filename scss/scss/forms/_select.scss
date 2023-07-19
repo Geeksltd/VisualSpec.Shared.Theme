@@ -10,15 +10,15 @@
         background-position: right;
         background-origin: content-box;
         background-position-y: center;
-        padding-left: 16px;
-        padding-right: 7.86px;
+        @extend .ps-3;
+        @extend .pe-2;
     }
 }
 
 .dropdown-toggle::after{
      //TODO: this line must change to relative path. this is becasuse cors
     background-image:url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
-    border:0px!important;
+    @extend .border-0;
 }
 .dropdown-menu{
         --#{$prefix}dropdown-border-radius: 0px;
@@ -38,7 +38,7 @@ div.dropdown.show-tick {
     div.dropdown-menu div[role="listbox"] ul.dropdown-menu li {
         a.dropdown-item {
             span.check-mark {
-                position: relative;
+                @extend .position-relative;
                 border: 1px solid $gray-400;
                 width: 26px;
                 height: 26px;
@@ -48,59 +48,59 @@ div.dropdown.show-tick {
                 top: 2px;
 
                 &:after {
-                    display: none;
+                    @extend .d-none;
                 }
             }
 
             span.text {
-                position: relative;
+                @extend .position-relative;
                 top: -5px;
-                margin-left: 8px;
-                margin-right: 0px;
+                @extend .ms-2;
+                @extend .me-0;
             }
         }
 
         a.dropdown-item.selected {
             span.check-mark {
                 background: url('data:image/svg+xml;utf8,%3csvg id="tick" xmlns="http://www.w3.org/2000/svg" width="12.237" height="10.074" viewBox="0 0 12.237 10.074"%3e%3cpath id="tick-2" data-name="tick" d="M1.722,4.093A12.421,12.421,0,0,1,5.614,7.17a.72.72,0,0,0-.845.194L4.654,7.5A11.061,11.061,0,0,0,5.93,5.422,12.575,12.575,0,0,1,10.968.1a.891.891,0,0,1,1.2.38c.287,1.015-.419,2.115-.748,3-.979,2.3-3.047,3.791-4.534,5.7a2.419,2.419,0,0,1-2.115.882C2.5,9.5.86,7.438.053,5.293a1.1,1.1,0,0,1,1.669-1.2" transform="translate(0.001 0)" fill="rgb(249, 157, 0)"/%3e%3c/svg%3e') center center no-repeat;
-                background-color: $black;
+                @extend .bg-black;
 
                 &:after {
-                    display: none;
+                    @extend .d-none;
                 }
             }
 
             span.text {
-                font-weight: bold;
-                color: black;
+                @extend .fw-bold;
+                @extend .text-black;
             }
         }
     }
 }
  a.dropdown-item.selected{
      span.text{
-        font-weight: bold;
-        color: black;
+        @extend .fw-bold;
+        @extend .text-black;
      }
  }
 
 
 .bs-actionsbox{
-    text-align: center;
+   @extend .text-center;
 }
 
 .bs-searchbox{
     border-bottom : 1px solid #{$gray-400};
-    padding-bottom: 8px;
-    margin-bottom: 8px;
+    @extend .pb-2;
+    @extend .mb-2;
     
     input.form-control{
         --#{$prefix}border-color: #{$gray-400}!important;
         --#{$prefix}background-color: #{$gray-50} !important;
         border-radius: 0px;
-        padding-left: 16px;
+        @extend .ps-3;
         font-family: #{$font-family-monospace};
-        font-weight: bold;
+        @extend .fw-bold;
 
             background-image: url(/lib/visualspec.shared.theme/dist/icons/search.svg);
             background-repeat:no-repeat;
@@ -113,7 +113,7 @@ div.dropdown.show-tick {
             --#{$prefix}background-color: #{$gray-50}!important;
             border-color: #{$gray-400}!important;        
             background-color: $gray-50 !important; 
-             box-shadow: $btn-focus-box-shadow;
+            box-shadow: $btn-focus-box-shadow;
         }
         &:focus-visible{
          @if $enable-shadows {
@@ -127,25 +127,25 @@ div.dropdown.show-tick {
 
 
 .bs-actionsbox{
-    text-align: center;
+   @extend .text-center;
 
     .btn-group{
         border-radius: 2rem;
-        border: 1px solid black;
-        padding: 2px;
+        @extend .border;
+        @extend .border-1;
+        @extend .border-black;
         width: 192px;
 
         .bs-select-all{
+            @extend .p-0;
+            @extend .text-white;
+            @extend .bg-black;
             font-size: 12px;
-            padding: 0;
-            border-radius: 25px!important;
-            color:white;
-            background-color:black;
         }
         .bs-deselect-all{
-                border: 0px;
+                @extend .text-nowrap;
+                @extend .border-0;
                 margin-left:1px!important;
-                 border-radius: 25px!important;
         }
     }
 }

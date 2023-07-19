@@ -2932,13 +2932,10 @@ textarea.form-control-lg {
   background-position: right;
   background-origin: content-box;
   background-position-y: center;
-  padding-left: 16px;
-  padding-right: 7.86px;
 }
 
 .dropdown-toggle::after {
   background-image: url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
-  border: 0px !important;
 }
 
 .dropdown-menu {
@@ -2957,7 +2954,6 @@ div.dropdown.show-tick {
   padding-left: 0px;
 }
 div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.check-mark {
-  position: relative;
   border: 1px solid rgba(109, 123, 123, 0.4);
   width: 26px;
   height: 26px;
@@ -2966,48 +2962,20 @@ div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a
   left: 0px;
   top: 2px;
 }
-div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.check-mark:after {
-  display: none;
-}
 div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.text {
-  position: relative;
   top: -5px;
-  margin-left: 8px;
-  margin-right: 0px;
 }
 div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.check-mark {
   background: url('data:image/svg+xml;utf8,%3csvg id="tick" xmlns="http://www.w3.org/2000/svg" width="12.237" height="10.074" viewBox="0 0 12.237 10.074"%3e%3cpath id="tick-2" data-name="tick" d="M1.722,4.093A12.421,12.421,0,0,1,5.614,7.17a.72.72,0,0,0-.845.194L4.654,7.5A11.061,11.061,0,0,0,5.93,5.422,12.575,12.575,0,0,1,10.968.1a.891.891,0,0,1,1.2.38c.287,1.015-.419,2.115-.748,3-.979,2.3-3.047,3.791-4.534,5.7a2.419,2.419,0,0,1-2.115.882C2.5,9.5.86,7.438.053,5.293a1.1,1.1,0,0,1,1.669-1.2" transform="translate(0.001 0)" fill="rgb(249, 157, 0)"/%3e%3c/svg%3e') center center no-repeat;
-  background-color: #000;
 }
-div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.check-mark:after {
-  display: none;
-}
-div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.text {
-  font-weight: bold;
-  color: black;
-}
-
-a.dropdown-item.selected span.text {
-  font-weight: bold;
-  color: black;
-}
-
-.bs-actionsbox {
-  text-align: center;
-}
-
 .bs-searchbox {
   border-bottom: 1px solid rgba(109, 123, 123, 0.4);
-  padding-bottom: 8px;
-  margin-bottom: 8px;
 }
 .bs-searchbox input.form-control {
   --bs-border-color: rgba(109, 123, 123, 0.4)!important;
   --bs-background-color: rgba(109, 123, 123, 0.0509803922) !important;
   border-radius: 0px;
-  padding-left: 16px;
   font-family: Metropolis, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  font-weight: bold;
   background-image: url(/lib/visualspec.shared.theme/dist/icons/search.svg);
   background-repeat: no-repeat;
   background-position-x: 95%;
@@ -3025,26 +2993,15 @@ a.dropdown-item.selected span.text {
   box-shadow: 0 0 0 0.125rem #6d7b7b;
 }
 
-.bs-actionsbox {
-  text-align: center;
-}
 .bs-actionsbox .btn-group {
   border-radius: 2rem;
-  border: 1px solid black;
-  padding: 2px;
   width: 192px;
 }
 .bs-actionsbox .btn-group .bs-select-all {
   font-size: 12px;
-  padding: 0;
-  border-radius: 25px !important;
-  color: white;
-  background-color: black;
 }
 .bs-actionsbox .btn-group .bs-deselect-all {
-  border: 0px;
   margin-left: 1px !important;
-  border-radius: 25px !important;
 }
 
 .radio-helper {
@@ -3691,6 +3648,7 @@ input[type='radio'].handled {
 }
 
 .add-item-btn {
+  --bs-btn-line-height: 1.75rem;
   text-decoration: none;
 }
 .add-item-btn i, .add-item-btn img {
@@ -7911,7 +7869,9 @@ input[type='radio'].handled {
 .zoom-part-container .zoom-out-btn {
   background: url(/lib/visualspec.shared.theme/dist/icons/zoom-out.svg) center no-repeat;
 }
-
+.zoom-part-container .zoom-reset-btn {
+  background: url(/lib/visualspec.shared.theme/dist/icons/undo.svg) center no-repeat;
+}
 body .wrapper > .content main .page .left-panel {
   min-width: 20rem;
 }
@@ -8084,7 +8044,7 @@ body .wrapper > .content main .page .left-panel {
   z-index: 1020;
 }
 
-.sticky-bottom, .zoom-part-container, body .wrapper > .content main .page .right-panel footer {
+.sticky-bottom, body .wrapper > .content main .page .right-panel footer {
   position: sticky;
   bottom: 0;
   z-index: 1020;
@@ -8230,7 +8190,7 @@ body .wrapper > .content main .page .left-panel {
   float: left !important;
 }
 
-.float-end, .pagination-size.paging-size, .grid-view .buttons-row.top-buttons-row, .left-dashboard-overview .left-dashboard-widget .widget-data-row .edit-item-btn, .left-dashboard-overview .left-dashboard-widget .widget-data-row .grid tbody tr td.actions a[name=Edit], .grid tbody tr td.actions .left-dashboard-overview .left-dashboard-widget .widget-data-row a[name=Edit], .left-dashboard-overview .left-dashboard-widget .widget-data-row .grid tbody tr td.actions button[name=Edit], .grid tbody tr td.actions .left-dashboard-overview .left-dashboard-widget .widget-data-row button[name=Edit], .left-dashboard-overview .left-dashboard-widget .widget-data-row .add-item-btn, body .wrapper > .content main .page .right-panel footer {
+.float-end, .pagination-size.paging-size, .grid-view .buttons-row.top-buttons-row, .left-dashboard-overview .left-dashboard-widget .widget-data-row .edit-item-btn, .left-dashboard-overview .left-dashboard-widget .widget-data-row .grid tbody tr td.actions a[name=Edit], .grid tbody tr td.actions .left-dashboard-overview .left-dashboard-widget .widget-data-row a[name=Edit], .left-dashboard-overview .left-dashboard-widget .widget-data-row .grid tbody tr td.actions button[name=Edit], .grid tbody tr td.actions .left-dashboard-overview .left-dashboard-widget .widget-data-row button[name=Edit], .left-dashboard-overview .left-dashboard-widget .widget-data-row .add-item-btn {
   float: right !important;
 }
 
@@ -8310,7 +8270,7 @@ body .wrapper > .content main .page .left-panel {
   display: inline-flex !important;
 }
 
-.d-none, .checkbox-helper {
+.d-none, .checkbox-helper, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.check-mark:after, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.check-mark:after {
   display: none !important;
 }
 
@@ -8334,7 +8294,7 @@ body .wrapper > .content main .page .left-panel {
   position: static !important;
 }
 
-.position-relative, .btn .icon-spec-search, .btn-action .icon-spec-search, .btn-action-i .icon-spec-search, .add-item-btn .icon-spec-search, .edit-item-btn .icon-spec-search, .delete-item-btn .icon-spec-search, .save-item-btn .icon-spec-search, .view-item-btn .icon-spec-search, .help-btn .icon-spec-search, .modal .modal-header .close .icon-spec-search, .grid tbody tr td.actions a[name=Edit] .icon-spec-search, .grid tbody tr td.actions button[name=Edit] .icon-spec-search, .grid tbody tr td.actions a[name=View] .icon-spec-search, .grid tbody tr td.actions button[name=View] .icon-spec-search, .grid tbody tr td.actions a[name=Delete] .icon-spec-search, .grid tbody tr td.actions button[name=Delete] .icon-spec-search, .grid-view .search .buttons-row .buttons button .icon-spec-search, .scope-treeview nav h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .scope-treeview nav .h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .zoom-part-container button .icon-spec-search {
+.position-relative, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.check-mark, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.text, .btn .icon-spec-search, .btn-action .icon-spec-search, .btn-action-i .icon-spec-search, .add-item-btn .icon-spec-search, .edit-item-btn .icon-spec-search, .delete-item-btn .icon-spec-search, .save-item-btn .icon-spec-search, .view-item-btn .icon-spec-search, .help-btn .icon-spec-search, .modal .modal-header .close .icon-spec-search, .grid tbody tr td.actions a[name=Edit] .icon-spec-search, .grid tbody tr td.actions button[name=Edit] .icon-spec-search, .grid tbody tr td.actions a[name=View] .icon-spec-search, .grid tbody tr td.actions button[name=View] .icon-spec-search, .grid tbody tr td.actions a[name=Delete] .icon-spec-search, .grid tbody tr td.actions button[name=Delete] .icon-spec-search, .grid-view .search .buttons-row .buttons button .icon-spec-search, .scope-treeview nav h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .scope-treeview nav .h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .zoom-part-container button .icon-spec-search {
   position: relative !important;
 }
 
@@ -8410,11 +8370,11 @@ body .wrapper > .content main .page .left-panel {
   transform: translateY(-50%) !important;
 }
 
-.border, .help-btn, .zoom-part-container button {
+.border, .bs-actionsbox .btn-group, .help-btn, .zoom-part-container button {
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
-.border-0, fieldset, .card .card-header, .card .card-footer, .grid-view .card-header, .grid-view .card-footer, .card .grid-view h2, .grid-view .card h2, .grid-view h2, .grid-view .h2, .scope-treeview nav .card-header, .scope-treeview nav .card-footer, .scope-treeview nav ul, .left-dashboard-overview .left-dashboard-widget .card-header, .left-dashboard-overview .left-dashboard-widget .card-footer, .left-dashboard-overview .left-dashboard-widget .grid-view h2, .grid-view .left-dashboard-overview .left-dashboard-widget h2, .left-dashboard-overview .grid-view .left-dashboard-widget h2, .datepicker table thead tr, .form-module .card-header, .form-module .card-footer, .card .form-module h2, .form-module .card h2, .left-dashboard-overview .left-dashboard-widget .form-module h2, .form-module .left-dashboard-overview .left-dashboard-widget h2, .form-module h2, .form-module .h2, .form-module .buttons-row {
+.border-0, .dropdown-toggle::after, .bs-actionsbox .btn-group .bs-deselect-all, fieldset, .card .card-header, .card .card-footer, .grid-view .card-header, .grid-view .card-footer, .card .grid-view h2, .grid-view .card h2, .grid-view h2, .grid-view .h2, .scope-treeview nav .card-header, .scope-treeview nav .card-footer, .scope-treeview nav ul, .left-dashboard-overview .left-dashboard-widget .card-header, .left-dashboard-overview .left-dashboard-widget .card-footer, .left-dashboard-overview .left-dashboard-widget .grid-view h2, .grid-view .left-dashboard-overview .left-dashboard-widget h2, .left-dashboard-overview .grid-view .left-dashboard-widget h2, .datepicker table thead tr, .form-module .card-header, .form-module .card-footer, .card .form-module h2, .form-module .card h2, .left-dashboard-overview .left-dashboard-widget .form-module h2, .form-module .left-dashboard-overview .left-dashboard-widget h2, .form-module h2, .form-module .h2, .form-module .buttons-row {
   border: 0 !important;
 }
 
@@ -8490,7 +8450,7 @@ body .wrapper > .content main .page .left-panel {
   border-color: rgba(var(--bs-dark-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-black, .help-btn, .zoom-part-container button {
+.border-black, .bs-actionsbox .btn-group, .help-btn, .zoom-part-container button {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-black-rgb), var(--bs-border-opacity)) !important;
 }
@@ -8500,7 +8460,7 @@ body .wrapper > .content main .page .left-panel {
   border-color: rgba(var(--bs-white-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-1, .help-btn {
+.border-1, .bs-actionsbox .btn-group, .help-btn {
   --bs-border-width: 1px;
 }
 
@@ -8938,7 +8898,7 @@ body .wrapper > .content main .page .left-panel {
   margin-top: auto !important;
 }
 
-.me-0 {
+.me-0, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.text {
   margin-right: 0 !important;
 }
 
@@ -8990,7 +8950,7 @@ body .wrapper > .content main .page .left-panel {
   margin-bottom: 0.25rem !important;
 }
 
-.mb-2, .left-dashboard-overview .left-dashboard-widget .widget-data-row, .sidemenu-wrapper .sidebar .dropdownMainmenu li, .sidemenu-wrapper .sidebar ul.nav .nav-item.dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .dropdown.projectName .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .nav-item .dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .projectName .dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar .profile .dropdown .dropdown-menu li, .left-menu .card .accordion .accordion-item, .left-menu .grid-view .accordion .accordion-item, .left-menu .scope-treeview nav .accordion .accordion-item, .scope-treeview .left-menu nav .accordion .accordion-item, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item, .left-menu .form-module .accordion .accordion-item, body .wrapper > .content main .page .left-panel .sidebar-wrapper h2, body .wrapper > .content main .page .left-panel .sidebar-wrapper .h2 {
+.mb-2, .bs-searchbox, .left-dashboard-overview .left-dashboard-widget .widget-data-row, .sidemenu-wrapper .sidebar .dropdownMainmenu li, .sidemenu-wrapper .sidebar ul.nav .nav-item.dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .dropdown.projectName .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .nav-item .dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar ul.nav .projectName .dropdown .dropdown-menu li, .sidemenu-wrapper .sidebar .profile .dropdown .dropdown-menu li, .left-menu .card .accordion .accordion-item, .left-menu .grid-view .accordion .accordion-item, .left-menu .scope-treeview nav .accordion .accordion-item, .scope-treeview .left-menu nav .accordion .accordion-item, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item, .left-menu .form-module .accordion .accordion-item, body .wrapper > .content main .page .left-panel .sidebar-wrapper h2, body .wrapper > .content main .page .left-panel .sidebar-wrapper .h2 {
   margin-bottom: 0.5rem !important;
 }
 
@@ -9026,7 +8986,7 @@ body .wrapper > .content main .page .left-panel {
   margin-left: 0.25rem !important;
 }
 
-.ms-2, .form-check-label {
+.ms-2, .form-check-label, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.text {
   margin-left: 0.5rem !important;
 }
 
@@ -9046,7 +9006,7 @@ body .wrapper > .content main .page .left-panel {
   margin-left: auto !important;
 }
 
-.p-0, .modal .modal-body .container-fluid, .modal .modal-body .container-sm, .modal .modal-body .container-md, .modal .modal-body .container-lg, .modal .modal-body .container-xl, .modal .modal-body .container-xxl {
+.p-0, .bs-actionsbox .btn-group .bs-select-all, .modal .modal-body .container-fluid, .modal .modal-body .container-sm, .modal .modal-body .container-md, .modal .modal-body .container-lg, .modal .modal-body .container-xl, .modal .modal-body .container-xxl {
   padding: 0 !important;
 }
 
@@ -9206,7 +9166,7 @@ body .wrapper > .content main .page .left-panel {
   padding-right: 0.25rem !important;
 }
 
-.pe-2, .left-menu .card .accordion .accordion-item .accordion-body ul li > div, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div {
+.pe-2, .bootstrap-select button.dropdown-toggle, .left-menu .card .accordion .accordion-item .accordion-body ul li > div, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div {
   padding-right: 0.5rem !important;
 }
 
@@ -9238,7 +9198,7 @@ body .wrapper > .content main .page .left-panel {
   padding-bottom: 0.25rem !important;
 }
 
-.pb-2 {
+.pb-2, .bs-searchbox {
   padding-bottom: 0.5rem !important;
 }
 
@@ -9274,7 +9234,7 @@ body .wrapper > .content main .page .left-panel {
   padding-left: 0.5rem !important;
 }
 
-.ps-3 {
+.ps-3, .bootstrap-select button.dropdown-toggle, .bs-searchbox input.form-control {
   padding-left: 1rem !important;
 }
 
@@ -9366,7 +9326,7 @@ body .wrapper > .content main .page .left-panel {
   font-weight: 400 !important;
 }
 
-.fw-bold, .left-menu .card .card-header, .left-menu .grid-view .card-header, .left-menu .scope-treeview nav .card-header, .scope-treeview .left-menu nav .card-header, .left-menu .left-dashboard-overview .left-dashboard-widget .card-header, .left-dashboard-overview .left-menu .left-dashboard-widget .card-header, .left-menu .form-module .card-header, .grid-view .left-menu .card h2, .left-menu .grid-view h2, .grid-view .left-menu .scope-treeview nav h2, .grid-view .scope-treeview .left-menu nav h2, .grid-view .left-menu .left-dashboard-overview .left-dashboard-widget h2, .grid-view .left-dashboard-overview .left-menu .left-dashboard-widget h2, .grid-view .left-menu .card .h2, .left-menu .grid-view .h2, .grid-view .left-menu .scope-treeview nav .h2, .grid-view .scope-treeview .left-menu nav .h2, .grid-view .left-menu .left-dashboard-overview .left-dashboard-widget .h2, .grid-view .left-dashboard-overview .left-menu .left-dashboard-widget .h2, .form-module .left-menu .card h2, .form-module .left-menu .scope-treeview nav h2, .form-module .scope-treeview .left-menu nav h2, .form-module .left-menu .left-dashboard-overview .left-dashboard-widget h2, .form-module .left-dashboard-overview .left-menu .left-dashboard-widget h2, .left-menu .form-module h2, .form-module .left-menu .card .h2, .form-module .left-menu .scope-treeview nav .h2, .form-module .scope-treeview .left-menu nav .h2, .form-module .left-menu .left-dashboard-overview .left-dashboard-widget .h2, .form-module .left-dashboard-overview .left-menu .left-dashboard-widget .h2, .left-menu .form-module .h2 {
+.fw-bold, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.text, a.dropdown-item.selected span.text, .bs-searchbox input.form-control, .left-menu .card .card-header, .left-menu .grid-view .card-header, .left-menu .scope-treeview nav .card-header, .scope-treeview .left-menu nav .card-header, .left-menu .left-dashboard-overview .left-dashboard-widget .card-header, .left-dashboard-overview .left-menu .left-dashboard-widget .card-header, .left-menu .form-module .card-header, .grid-view .left-menu .card h2, .left-menu .grid-view h2, .grid-view .left-menu .scope-treeview nav h2, .grid-view .scope-treeview .left-menu nav h2, .grid-view .left-menu .left-dashboard-overview .left-dashboard-widget h2, .grid-view .left-dashboard-overview .left-menu .left-dashboard-widget h2, .grid-view .left-menu .card .h2, .left-menu .grid-view .h2, .grid-view .left-menu .scope-treeview nav .h2, .grid-view .scope-treeview .left-menu nav .h2, .grid-view .left-menu .left-dashboard-overview .left-dashboard-widget .h2, .grid-view .left-dashboard-overview .left-menu .left-dashboard-widget .h2, .form-module .left-menu .card h2, .form-module .left-menu .scope-treeview nav h2, .form-module .scope-treeview .left-menu nav h2, .form-module .left-menu .left-dashboard-overview .left-dashboard-widget h2, .form-module .left-dashboard-overview .left-menu .left-dashboard-widget h2, .left-menu .form-module h2, .form-module .left-menu .card .h2, .form-module .left-menu .scope-treeview nav .h2, .form-module .scope-treeview .left-menu nav .h2, .form-module .left-menu .left-dashboard-overview .left-dashboard-widget .h2, .form-module .left-dashboard-overview .left-menu .left-dashboard-widget .h2, .left-menu .form-module .h2 {
   font-weight: 700 !important;
 }
 
@@ -9398,11 +9358,11 @@ body .wrapper > .content main .page .left-panel {
   text-align: left !important;
 }
 
-.text-end {
+.text-end, body .wrapper > .content main .page .right-panel footer {
   text-align: right !important;
 }
 
-.text-center, .left-dashboard-overview .left-dashboard-widget .widget-data-row .guesstimate-overview-widget_to, .sidemenu-wrapper .sidebar ul.nav {
+.text-center, .bs-actionsbox, .left-dashboard-overview .left-dashboard-widget .widget-data-row .guesstimate-overview-widget_to, .sidemenu-wrapper .sidebar ul.nav {
   text-align: center !important;
 }
 
@@ -9434,7 +9394,7 @@ body .wrapper > .content main .page .left-panel {
   white-space: normal !important;
 }
 
-.text-nowrap, .pagination-size.paging-size label, .scope-treeview nav ul li .treeview-node__title .treeview-node__text, .left-menu .card .accordion .accordion-item .accordion-button, .left-menu .grid-view .accordion .accordion-item .accordion-button, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-button, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-button, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-button, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-button, .left-menu .form-module .accordion .accordion-item .accordion-button, .left-menu .card .accordion .accordion-item .accordion-body ul li > div a, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div a, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div a, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div a, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div a, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div a, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div a {
+.text-nowrap, .bs-actionsbox .btn-group .bs-deselect-all, .pagination-size.paging-size label, .scope-treeview nav ul li .treeview-node__title .treeview-node__text, .left-menu .card .accordion .accordion-item .accordion-button, .left-menu .grid-view .accordion .accordion-item .accordion-button, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-button, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-button, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-button, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-button, .left-menu .form-module .accordion .accordion-item .accordion-button, .left-menu .card .accordion .accordion-item .accordion-body ul li > div a, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div a, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div a, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div a, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div a, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div a, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div a {
   white-space: nowrap !important;
 }
 
@@ -9485,12 +9445,12 @@ body .wrapper > .content main .page .left-panel {
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-black, .left-dashboard-overview .left-dashboard-widget .widget-data-row .widget-label, .left-dashboard-overview .left-dashboard-widget .widget-data-row .widget-value {
+.text-black, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.text, a.dropdown-item.selected span.text, .left-dashboard-overview .left-dashboard-widget .widget-data-row .widget-label, .left-dashboard-overview .left-dashboard-widget .widget-data-row .widget-value {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white, .nav-tabs .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link.active, .form-tabs-header.nav.nav-tabs .nav-link.active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link:active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link:active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link.active, .alertify-log {
+.text-white, .bs-actionsbox .btn-group .bs-select-all, .nav-tabs .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link.active, .form-tabs-header.nav.nav-tabs .nav-link.active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link:active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link:active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link.active, .alertify-log {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
@@ -9576,12 +9536,12 @@ body .wrapper > .content main .page .left-panel {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-black, .form-check-input:checked:disabled, .form-check-input :checked .disabled, .nav-tabs .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link.active, .form-tabs-header.nav.nav-tabs .nav-link.active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link:active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link:active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-item:active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .projectName:active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .nav-item.active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .active.projectName .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link .img-container img, .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link .img-container img, .sidemenu-wrapper .sidebar ul.nav .nav-item .form-tabs-header.nav.nav-tabs .nav-link .img-container img, .form-tabs-header.nav.nav-tabs .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link .img-container img {
+.bg-black, .form-check-input:checked:disabled, .form-check-input :checked .disabled, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.check-mark, .bs-actionsbox .btn-group .bs-select-all, .nav-tabs .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link.active, .form-tabs-header.nav.nav-tabs .nav-link.active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link:active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link:active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-item:active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .projectName:active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .nav-item.active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .active.projectName .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link .img-container img, .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link .img-container img, .sidemenu-wrapper .sidebar ul.nav .nav-item .form-tabs-header.nav.nav-tabs .nav-link .img-container img, .form-tabs-header.nav.nav-tabs .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link .img-container img {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-white, .grid-view, .sidemenu-wrapper .sidebar, :not(:root):fullscreen::backdrop {
+.bg-white, .grid-view, .sidemenu-wrapper .sidebar, .zoom-part-container :not(:root):fullscreen::backdrop {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
