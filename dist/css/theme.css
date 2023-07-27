@@ -2925,6 +2925,12 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 
+.group-control > .form-check {
+  min-height: unset;
+  padding-left: unset;
+  margin-bottom: unset;
+}
+
 .bootstrap-select button.dropdown-toggle {
   border-radius: 0px;
   background-image: url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
@@ -3237,7 +3243,7 @@ input[type='radio'].handled {
   --bs-btn-disabled-border-color: #F9af00;
 }
 
-.btn-secondary, .grid-view .search .buttons-row .buttons button, .grid tbody tr td.actions a[name=View], .grid tbody tr td.actions button[name=View], .grid tbody tr td.actions a[name=Edit], .grid tbody tr td.actions button[name=Edit], .view-item-btn, .edit-item-btn, .add-item-btn {
+.btn-secondary, .grid-view .search .buttons-row .buttons button, .grid tbody tr td.actions a[name=View], .grid tbody tr td.actions button[name=View], .grid tbody tr td.actions a[name=Edit], .grid tbody tr td.actions button[name=Edit], .view-item-btn, .save-item-btn, .edit-item-btn, .add-item-btn {
   --bs-btn-color: #000;
   --bs-btn-bg: #57b5e2;
   --bs-btn-border-color: #57b5e2;
@@ -3254,7 +3260,7 @@ input[type='radio'].handled {
   --bs-btn-disabled-border-color: #57b5e2;
 }
 
-.btn-success, .save-item-btn {
+.btn-success {
   --bs-btn-color: #000;
   --bs-btn-bg: #2A9E3E;
   --bs-btn-border-color: #2A9E3E;
@@ -3586,7 +3592,7 @@ input[type='radio'].handled {
   --bs-btn-border-width:0.125rem;
 }
 
-.btn-secondary, .grid-view .search .buttons-row .buttons button, .grid tbody tr td.actions a[name=View], .grid tbody tr td.actions button[name=View], .grid tbody tr td.actions a[name=Edit], .grid tbody tr td.actions button[name=Edit], .view-item-btn, .edit-item-btn, .add-item-btn {
+.btn-secondary, .grid-view .search .buttons-row .buttons button, .grid tbody tr td.actions a[name=View], .grid tbody tr td.actions button[name=View], .grid tbody tr td.actions a[name=Edit], .grid tbody tr td.actions button[name=Edit], .view-item-btn, .save-item-btn, .edit-item-btn, .add-item-btn {
   --bs-btn-color: #000;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #000;
@@ -3595,7 +3601,7 @@ input[type='radio'].handled {
   --bs-btn-disabled-bg:rgba(109, 123, 123, 0.2);
   --bs-btn-disabled-border-color:rgba(109, 123, 123, 0.2);
 }
-.btn-secondary:focus, .grid-view .search .buttons-row .buttons button:focus, .grid tbody tr td.actions a[name=View]:focus, .grid tbody tr td.actions button[name=View]:focus, .grid tbody tr td.actions a[name=Edit]:focus, .grid tbody tr td.actions button[name=Edit]:focus, .view-item-btn:focus, .edit-item-btn:focus, .add-item-btn:focus {
+.btn-secondary:focus, .grid-view .search .buttons-row .buttons button:focus, .grid tbody tr td.actions a[name=View]:focus, .grid tbody tr td.actions button[name=View]:focus, .grid tbody tr td.actions a[name=Edit]:focus, .grid tbody tr td.actions button[name=Edit]:focus, .view-item-btn:focus, .save-item-btn:focus, .edit-item-btn:focus, .add-item-btn:focus {
   --bs-btn-border-color:#6d7b7b;
   --bs-btn-border-width:0.125rem;
 }
@@ -3698,15 +3704,22 @@ input[type='radio'].handled {
   text-decoration: none;
 }
 .save-item-btn i, .save-item-btn img {
-  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/save.svg);
+  -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/tick.svg);
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/lib/visualspec.shared.theme/dist/icons/save.svg) no-repeat center;
+  mask-image: url(/lib/visualspec.shared.theme/dist/icons/tick.svg) no-repeat center;
   mask-repeat: no-repeat;
   mask-position: center;
-  background-color: #fff;
+  background-color: #000;
 }
 .save-item-btn:hover i, .save-item-btn:hover img {
   background-color: #fff;
+}
+.save-item-btn.deactive {
+  background-color: rgba(109, 123, 123, 0.2) !important;
+  border: unset;
+}
+.save-item-btn.deactive i, .save-item-btn.deactive img {
+  background-color: rgba(109, 123, 123, 0.3019607843) !important;
 }
 
 .view-item-btn, .grid tbody tr td.actions a[name=View], .grid tbody tr td.actions button[name=View] {
@@ -7802,11 +7815,8 @@ input[type='radio'].handled {
 .left-menu .card .accordion .accordion-item .accordion-header, .left-menu .grid-view .accordion .accordion-item .accordion-header, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-header, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-header, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-menu .form-module .accordion .accordion-item .accordion-header {
   /*@extend .ps-1;*/
 }
-.left-menu .card .accordion .accordion-item .accordion-button, .left-menu .grid-view .accordion .accordion-item .accordion-button, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-button, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-button, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-button, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-button, .left-menu .form-module .accordion .accordion-item .accordion-button {
-  /*width:0.75rem;*/
-}
 .left-menu .card .accordion .accordion-item .accordion-button::before, .left-menu .grid-view .accordion .accordion-item .accordion-button::before, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-button::before, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-button::before, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-button::before, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-button::before, .left-menu .form-module .accordion .accordion-item .accordion-button::before {
-  /*flex-shrink: 0;*/
+  top: 5px;
   width: var(--bs-accordion-btn-icon-width);
   height: var(--bs-accordion-btn-icon-width);
   margin-right: auto;
@@ -8302,7 +8312,7 @@ body .wrapper > .content main .page .left-panel {
   position: relative !important;
 }
 
-.position-absolute {
+.position-absolute, .left-menu .card .accordion .accordion-item .accordion-button::before, .left-menu .grid-view .accordion .accordion-item .accordion-button::before, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-button::before, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-button::before, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-button::before, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-button::before, .left-menu .form-module .accordion .accordion-item .accordion-button::before {
   position: absolute !important;
 }
 
@@ -8640,7 +8650,7 @@ body .wrapper > .content main .page .left-panel {
   justify-content: space-evenly !important;
 }
 
-.align-items-start {
+.align-items-start, .left-menu .card .accordion .accordion-item .accordion-header, .left-menu .grid-view .accordion .accordion-item .accordion-header, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-header, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-header, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-menu .form-module .accordion .accordion-item .accordion-header {
   align-items: flex-start !important;
 }
 
@@ -8648,7 +8658,7 @@ body .wrapper > .content main .page .left-panel {
   align-items: flex-end !important;
 }
 
-.align-items-center, .pagination-size.paging-size, .grid-view .search, .grid-view .search.inline-search, .scope-treeview nav h4:first-child, .scope-treeview nav .h4:first-child, .left-dashboard-overview .left-dashboard-widget .widget-data-row, .left-menu .card .accordion .accordion-item .accordion-header, .left-menu .grid-view .accordion .accordion-item .accordion-header, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-header, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-header, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-header, .left-menu .form-module .accordion .accordion-item .accordion-header, .left-menu .card .accordion .accordion-item .accordion-body ul li > div, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div {
+.align-items-center, .pagination-size.paging-size, .grid-view .search, .grid-view .search.inline-search, .scope-treeview nav h4:first-child, .scope-treeview nav .h4:first-child, .left-dashboard-overview .left-dashboard-widget .widget-data-row, .left-menu .card .accordion .accordion-item .accordion-body ul li > div, .left-menu .grid-view .accordion .accordion-item .accordion-body ul li > div, .left-menu .scope-treeview nav .accordion .accordion-item .accordion-body ul li > div, .scope-treeview .left-menu nav .accordion .accordion-item .accordion-body ul li > div, .left-menu .left-dashboard-overview .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-dashboard-overview .left-menu .left-dashboard-widget .accordion .accordion-item .accordion-body ul li > div, .left-menu .form-module .accordion .accordion-item .accordion-body ul li > div {
   align-items: center !important;
 }
 
@@ -8866,7 +8876,7 @@ body .wrapper > .content main .page .left-panel {
   margin-bottom: auto !important;
 }
 
-.mt-0 {
+.mt-0, .form-check-input {
   margin-top: 0 !important;
 }
 
@@ -8882,7 +8892,7 @@ body .wrapper > .content main .page .left-panel {
   margin-top: 0.25rem !important;
 }
 
-.mt-2, .form-check-input, .grid-view .buttons-row.top-buttons-row {
+.mt-2, .radio-list .form-check-input, .grid-view .buttons-row.top-buttons-row {
   margin-top: 0.5rem !important;
 }
 

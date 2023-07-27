@@ -5,7 +5,7 @@
 }
 .form-check-input {
     @extend .opacity-100;
-    @extend .mt-2;
+    @extend .mt-0;
     background-size: auto;
     &:hover{
         border-color:$black;
@@ -25,4 +25,11 @@
 
 .form-check-label {
     @extend .ms-2;
+}
+.group-control{
+    &>.form-check{
+        min-height:unset;
+        padding-left:unset;
+        margin-bottom : unset;
+    }
 }
