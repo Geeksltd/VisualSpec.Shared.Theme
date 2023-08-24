@@ -176,18 +176,15 @@
         text-decoration: none;
 }
 .save-item-btn{
-        @extend .btn-action-i;
-        @extend .btn-success;
+      @extend .btn-action-i;
+        @extend .btn-secondary;
             i,img {
-                  //TODO: this line must change to relative path. this is becasuse cors
-                   //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/save.svg);
+                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/tick.svg);
                 -webkit-mask-repeat:no-repeat;
-                //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(/lib/visualspec.shared.theme/dist/icons/save.svg) no-repeat center;
+                mask-image: url(/lib/visualspec.shared.theme/dist/icons/tick.svg) no-repeat center;
                 mask-repeat:no-repeat;
                 mask-position:center;
-                background-color:$white;
+                background-color:$black;
             }
             &:hover{
                  i,img{
@@ -195,6 +192,14 @@
                 }
             }
         text-decoration: none;
+        &.deactive {
+            background-color:$gray-200 !important;
+            border:unset;
+             i,img {
+
+                        background-color:$gray-300 !important;
+             }
+        }
 }
 .view-item-btn{
         @extend .btn-action-i;
