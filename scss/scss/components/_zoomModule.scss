@@ -1,7 +1,8 @@
 ﻿.zoom-part-container {
     @extend .ms-4;
     @extend .pb-4;
-    z-index: 100;
+    @extend .position-relative;
+    z-index: 999998;
 
     button {
         @extend .btn-action-i;

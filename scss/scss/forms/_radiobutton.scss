@@ -2,9 +2,15 @@
 .radio-helper {
     display:none!important;
 }
+
+.radio-list {
+    .form-check-input {
+        @extend .mt-2;
+    }
+}
+
 .form-check-input {
     opacity: 100%!important;
-    @extend .mt-2;
     background-size: auto;
     &:hover{
         border-color:$black;

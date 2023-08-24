@@ -35,7 +35,7 @@
                  .accordion-header{
                     /*@extend .ps-1;*/
                     @extend .pe-4;
-                    @extend .align-items-center;
+                    @extend .align-items-start;
                     @extend .d-flex;
                     @extend .mb-0;
                      &>a{
@@ -51,11 +51,11 @@
                      @extend .d-inline-block;
                      @extend .text-nowrap;
                      @extend .text-truncate;
-                     /*width:0.75rem;*/
                      &::before{
                           @extend .d-inline-block;
                           @extend .me-2;
-                          /*flex-shrink: 0;*/
+                          @extend .position-absolute;
+                          top:5px;
                           width: var(--#{$prefix}accordion-btn-icon-width);
                           height: var(--#{$prefix}accordion-btn-icon-width);
                           margin-right: auto;
