@@ -30,6 +30,14 @@
                      width: 1%;
                 }
             }
+             th.select-all{
+                input[type=checkbox]{
+                    @extend .form-check-input;
+                    height: $spacer * 1.125;
+                    width: $spacer * 1.125;
+                    @extend .mt-1;
+                }
+            }
         }
     }
 
@@ -67,6 +75,11 @@
                    --#{$prefix}badge-font-size : #{$font-size-xs};
                    /*font-size:;*/
                }
+            }
+             td.select-row {
+                input[type=checkbox]{
+                    @extend .form-check-input;
+                }
             }
         }
     }

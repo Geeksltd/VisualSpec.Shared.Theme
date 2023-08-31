@@ -2,13 +2,18 @@
     @extend .ms-4;
     @extend .pb-4;
     @extend .position-relative;
-    z-index: 999998;
+    z-index: 999;
 
     button {
         @extend .btn-action-i;
         @extend .border;
         @extend .border-black;
         @extend .mx-1;
+
+        &:first-child {
+            @extend .ms-0;
+        }
+
         width: $spacer*1.8;
         height: $spacer*1.8;
 
@@ -36,5 +41,6 @@
 }
 
 :not(:root):fullscreen::backdrop {
+    --#{$prefix}white-rgb:255,255,255;
     @extend .bg-white;
 }
