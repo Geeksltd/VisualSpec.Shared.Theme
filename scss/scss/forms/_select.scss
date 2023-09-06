@@ -2,7 +2,7 @@
 
 
 .bootstrap-select {
-    button.dropdown-toggle{
+    button.dropdown-toggle {
         border-radius: 0px;
         //TODO: this line must change to relative path. this is becasuse cors
         background-image: url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
@@ -12,6 +12,7 @@
         background-position-y: center;
         @extend .ps-3;
         @extend .pe-2;
+        background-color: $input-bg;
     }
 }
 

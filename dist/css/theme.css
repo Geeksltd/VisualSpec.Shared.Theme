@@ -2329,7 +2329,7 @@ textarea.form-control-lg {
   padding-left: 2.4375em;
   margin-bottom: 0.125rem;
 }
-.form-check .form-check-input {
+.form-check .form-check-input, .form-check .grid tbody tr td.select-row input[type=checkbox], .grid tbody tr td.select-row .form-check input[type=checkbox], .form-check .grid thead tr th.select-all input[type=checkbox], .grid thead tr th.select-all .form-check input[type=checkbox] {
   float: left;
   margin-left: -2.4375em;
 }
@@ -2339,13 +2339,13 @@ textarea.form-control-lg {
   padding-left: 0;
   text-align: right;
 }
-.form-check-reverse .form-check-input {
+.form-check-reverse .form-check-input, .form-check-reverse .grid tbody tr td.select-row input[type=checkbox], .grid tbody tr td.select-row .form-check-reverse input[type=checkbox], .form-check-reverse .grid thead tr th.select-all input[type=checkbox], .grid thead tr th.select-all .form-check-reverse input[type=checkbox] {
   float: right;
   margin-right: -2.4375em;
   margin-left: 0;
 }
 
-.form-check-input {
+.form-check-input, .grid tbody tr td.select-row input[type=checkbox], .grid thead tr th.select-all input[type=checkbox] {
   width: 1.625em;
   height: 1.625em;
   margin-top: -0.0625em;
@@ -2358,41 +2358,41 @@ textarea.form-control-lg {
   appearance: none;
   print-color-adjust: exact;
 }
-.form-check-input[type=checkbox] {
+.form-check-input[type=checkbox], .grid tbody tr td.select-row input[type=checkbox], .grid thead tr th.select-all input[type=checkbox] {
   border-radius: 0;
 }
-.form-check-input[type=radio] {
+.form-check-input[type=radio], .grid tbody tr td.select-row input[type=radio][type=checkbox], .grid thead tr th.select-all input[type=radio][type=checkbox] {
   border-radius: 50%;
 }
-.form-check-input:active {
+.form-check-input:active, .grid tbody tr td.select-row input[type=checkbox]:active, .grid thead tr th.select-all input[type=checkbox]:active {
   filter: brightness(90%);
 }
-.form-check-input:focus {
+.form-check-input:focus, .grid tbody tr td.select-row input[type=checkbox]:focus, .grid thead tr th.select-all input[type=checkbox]:focus {
   border-color: #000;
   outline: 0;
   box-shadow: 0 0 0 0 transparent;
 }
-.form-check-input:checked {
+.form-check-input:checked, .grid tbody tr td.select-row input[type=checkbox]:checked, .grid thead tr th.select-all input[type=checkbox]:checked {
   background-color: #000;
   border-color: rgba(109, 123, 123, 0.4);
 }
-.form-check-input:checked[type=checkbox] {
+.form-check-input:checked[type=checkbox], .grid tbody tr td.select-row input:checked[type=checkbox], .grid thead tr th.select-all input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg id='tick' xmlns='http://www.w3.org/2000/svg' width='12.237' height='10.074' viewBox='0 0 12.237 10.074'%3e%3cpath id='tick-2' data-name='tick' d='M1.722,4.093A12.421,12.421,0,0,1,5.614,7.17a.72.72,0,0,0-.845.194L4.654,7.5A11.061,11.061,0,0,0,5.93,5.422,12.575,12.575,0,0,1,10.968.1a.891.891,0,0,1,1.2.38c.287,1.015-.419,2.115-.748,3-.979,2.3-3.047,3.791-4.534,5.7a2.419,2.419,0,0,1-2.115.882C2.5,9.5.86,7.438.053,5.293a1.1,1.1,0,0,1,1.669-1.2' transform='translate%280.001 0%29' fill='%23F9af00' /%3e%3c/svg%3e");
 }
-.form-check-input:checked[type=radio] {
+.form-check-input:checked[type=radio], .grid tbody tr td.select-row input[type=checkbox]:checked[type=radio], .grid thead tr th.select-all input[type=checkbox]:checked[type=radio] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e %3ccircle id='Ellipse_411' data-name='Ellipse 411' cx='8' cy='8' r='8' fill='%23F9af00' /%3e%3c/svg%3e");
 }
-.form-check-input[type=checkbox]:indeterminate {
+.form-check-input[type=checkbox]:indeterminate, .grid tbody tr td.select-row input[type=checkbox]:indeterminate, .grid thead tr th.select-all input[type=checkbox]:indeterminate {
   background-color: rgba(109, 123, 123, 0.4);
   border-color: rgba(109, 123, 123, 0.4);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
-.form-check-input:disabled {
+.form-check-input:disabled, .grid tbody tr td.select-row input[type=checkbox]:disabled, .grid thead tr th.select-all input[type=checkbox]:disabled {
   pointer-events: none;
   filter: none;
   opacity: 0.5;
 }
-.form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
+.form-check-input[disabled] ~ .form-check-label, .grid tbody tr td.select-row input[disabled][type=checkbox] ~ .form-check-label, .grid thead tr th.select-all input[disabled][type=checkbox] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label, .grid tbody tr td.select-row input[type=checkbox]:disabled ~ .form-check-label, .grid thead tr th.select-all input[type=checkbox]:disabled ~ .form-check-label {
   cursor: default;
   opacity: 0.5;
 }
@@ -2400,7 +2400,7 @@ textarea.form-control-lg {
 .form-switch {
   padding-left: 2.5em;
 }
-.form-switch .form-check-input {
+.form-switch .form-check-input, .form-switch .grid tbody tr td.select-row input[type=checkbox], .grid tbody tr td.select-row .form-switch input[type=checkbox], .form-switch .grid thead tr th.select-all input[type=checkbox], .grid thead tr th.select-all .form-switch input[type=checkbox] {
   width: 2em;
   margin-left: -2.5em;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
@@ -2409,14 +2409,14 @@ textarea.form-control-lg {
   transition: background-position 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-switch .form-check-input {
+  .form-switch .form-check-input, .form-switch .grid tbody tr td.select-row input[type=checkbox], .grid tbody tr td.select-row .form-switch input[type=checkbox], .form-switch .grid thead tr th.select-all input[type=checkbox], .grid thead tr th.select-all .form-switch input[type=checkbox] {
     transition: none;
   }
 }
-.form-switch .form-check-input:focus {
+.form-switch .form-check-input:focus, .form-switch .grid tbody tr td.select-row input[type=checkbox]:focus, .grid tbody tr td.select-row .form-switch input[type=checkbox]:focus, .form-switch .grid thead tr th.select-all input[type=checkbox]:focus, .grid thead tr th.select-all .form-switch input[type=checkbox]:focus {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");
 }
-.form-switch .form-check-input:checked {
+.form-switch .form-check-input:checked, .form-switch .grid tbody tr td.select-row input[type=checkbox]:checked, .grid tbody tr td.select-row .form-switch input[type=checkbox]:checked, .form-switch .grid thead tr th.select-all input[type=checkbox]:checked, .grid thead tr th.select-all .form-switch input[type=checkbox]:checked {
   background-position: right center;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
@@ -2424,7 +2424,7 @@ textarea.form-control-lg {
   padding-right: 2.5em;
   padding-left: 0;
 }
-.form-switch.form-check-reverse .form-check-input {
+.form-switch.form-check-reverse .form-check-input, .form-switch.form-check-reverse .grid tbody tr td.select-row input[type=checkbox], .grid tbody tr td.select-row .form-switch.form-check-reverse input[type=checkbox], .form-switch.form-check-reverse .grid thead tr th.select-all input[type=checkbox], .grid thead tr th.select-all .form-switch.form-check-reverse input[type=checkbox] {
   margin-right: -2.5em;
   margin-left: 0;
 }
@@ -2791,20 +2791,20 @@ textarea.form-control-lg {
   width: calc(3rem + calc(1.5em + 0.93rem));
 }
 
-.was-validated .form-check-input:valid, .form-check-input.is-valid {
+.was-validated .form-check-input:valid, .was-validated .grid tbody tr td.select-row input[type=checkbox]:valid, .grid tbody tr td.select-row .was-validated input[type=checkbox]:valid, .was-validated .grid thead tr th.select-all input[type=checkbox]:valid, .grid thead tr th.select-all .was-validated input[type=checkbox]:valid, .form-check-input.is-valid, .grid tbody tr td.select-row input.is-valid[type=checkbox], .grid thead tr th.select-all input.is-valid[type=checkbox] {
   border-color: #2A9E3E;
 }
-.was-validated .form-check-input:valid:checked, .form-check-input.is-valid:checked {
+.was-validated .form-check-input:valid:checked, .was-validated .grid tbody tr td.select-row input[type=checkbox]:valid:checked, .grid tbody tr td.select-row .was-validated input[type=checkbox]:valid:checked, .was-validated .grid thead tr th.select-all input[type=checkbox]:valid:checked, .grid thead tr th.select-all .was-validated input[type=checkbox]:valid:checked, .form-check-input.is-valid:checked, .grid tbody tr td.select-row input.is-valid[type=checkbox]:checked, .grid thead tr th.select-all input.is-valid[type=checkbox]:checked {
   background-color: #2A9E3E;
 }
-.was-validated .form-check-input:valid:focus, .form-check-input.is-valid:focus {
+.was-validated .form-check-input:valid:focus, .was-validated .grid tbody tr td.select-row input[type=checkbox]:valid:focus, .grid tbody tr td.select-row .was-validated input[type=checkbox]:valid:focus, .was-validated .grid thead tr th.select-all input[type=checkbox]:valid:focus, .grid thead tr th.select-all .was-validated input[type=checkbox]:valid:focus, .form-check-input.is-valid:focus, .grid tbody tr td.select-row input.is-valid[type=checkbox]:focus, .grid thead tr th.select-all input.is-valid[type=checkbox]:focus {
   box-shadow: 0 0 0 1px rgba(42, 158, 62, 0.25);
 }
-.was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
+.was-validated .form-check-input:valid ~ .form-check-label, .was-validated .grid tbody tr td.select-row input[type=checkbox]:valid ~ .form-check-label, .grid tbody tr td.select-row .was-validated input[type=checkbox]:valid ~ .form-check-label, .was-validated .grid thead tr th.select-all input[type=checkbox]:valid ~ .form-check-label, .grid thead tr th.select-all .was-validated input[type=checkbox]:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label, .grid tbody tr td.select-row input.is-valid[type=checkbox] ~ .form-check-label, .grid thead tr th.select-all input.is-valid[type=checkbox] ~ .form-check-label {
   color: #2A9E3E;
 }
 
-.form-check-inline .form-check-input ~ .valid-feedback {
+.form-check-inline .form-check-input ~ .valid-feedback, .form-check-inline .grid tbody tr td.select-row input[type=checkbox] ~ .valid-feedback, .grid tbody tr td.select-row .form-check-inline input[type=checkbox] ~ .valid-feedback, .form-check-inline .grid thead tr th.select-all input[type=checkbox] ~ .valid-feedback, .grid thead tr th.select-all .form-check-inline input[type=checkbox] ~ .valid-feedback {
   margin-left: 0.5em;
 }
 
@@ -2881,20 +2881,20 @@ textarea.form-control-lg {
   width: calc(3rem + calc(1.5em + 0.93rem));
 }
 
-.was-validated .form-check-input:invalid, .form-check-input.is-invalid {
+.was-validated .form-check-input:invalid, .was-validated .grid tbody tr td.select-row input[type=checkbox]:invalid, .grid tbody tr td.select-row .was-validated input[type=checkbox]:invalid, .was-validated .grid thead tr th.select-all input[type=checkbox]:invalid, .grid thead tr th.select-all .was-validated input[type=checkbox]:invalid, .form-check-input.is-invalid, .grid tbody tr td.select-row input.is-invalid[type=checkbox], .grid thead tr th.select-all input.is-invalid[type=checkbox] {
   border-color: #e24242;
 }
-.was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked {
+.was-validated .form-check-input:invalid:checked, .was-validated .grid tbody tr td.select-row input[type=checkbox]:invalid:checked, .grid tbody tr td.select-row .was-validated input[type=checkbox]:invalid:checked, .was-validated .grid thead tr th.select-all input[type=checkbox]:invalid:checked, .grid thead tr th.select-all .was-validated input[type=checkbox]:invalid:checked, .form-check-input.is-invalid:checked, .grid tbody tr td.select-row input.is-invalid[type=checkbox]:checked, .grid thead tr th.select-all input.is-invalid[type=checkbox]:checked {
   background-color: #e24242;
 }
-.was-validated .form-check-input:invalid:focus, .form-check-input.is-invalid:focus {
+.was-validated .form-check-input:invalid:focus, .was-validated .grid tbody tr td.select-row input[type=checkbox]:invalid:focus, .grid tbody tr td.select-row .was-validated input[type=checkbox]:invalid:focus, .was-validated .grid thead tr th.select-all input[type=checkbox]:invalid:focus, .grid thead tr th.select-all .was-validated input[type=checkbox]:invalid:focus, .form-check-input.is-invalid:focus, .grid tbody tr td.select-row input.is-invalid[type=checkbox]:focus, .grid thead tr th.select-all input.is-invalid[type=checkbox]:focus {
   box-shadow: 0 0 0 1px rgba(226, 66, 66, 0.25);
 }
-.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
+.was-validated .form-check-input:invalid ~ .form-check-label, .was-validated .grid tbody tr td.select-row input[type=checkbox]:invalid ~ .form-check-label, .grid tbody tr td.select-row .was-validated input[type=checkbox]:invalid ~ .form-check-label, .was-validated .grid thead tr th.select-all input[type=checkbox]:invalid ~ .form-check-label, .grid thead tr th.select-all .was-validated input[type=checkbox]:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label, .grid tbody tr td.select-row input.is-invalid[type=checkbox] ~ .form-check-label, .grid thead tr th.select-all input.is-invalid[type=checkbox] ~ .form-check-label {
   color: #e24242;
 }
 
-.form-check-inline .form-check-input ~ .invalid-feedback {
+.form-check-inline .form-check-input ~ .invalid-feedback, .form-check-inline .grid tbody tr td.select-row input[type=checkbox] ~ .invalid-feedback, .grid tbody tr td.select-row .form-check-inline input[type=checkbox] ~ .invalid-feedback, .form-check-inline .grid thead tr th.select-all input[type=checkbox] ~ .invalid-feedback, .grid thead tr th.select-all .form-check-inline input[type=checkbox] ~ .invalid-feedback {
   margin-left: 0.5em;
 }
 
@@ -2910,17 +2910,17 @@ textarea.form-control-lg {
   font-size: 0.875rem;
 }
 
-.form-check-input {
+.form-check-input, .grid tbody tr td.select-row input[type=checkbox], .grid thead tr th.select-all input[type=checkbox] {
   background-size: auto;
 }
-.form-check-input:hover {
+.form-check-input:hover, .grid tbody tr td.select-row input[type=checkbox]:hover, .grid thead tr th.select-all input[type=checkbox]:hover {
   border-color: #000;
 }
-.form-check-input:checked:disabled, .form-check-input :checked .disabled {
+.form-check-input:checked:disabled, .grid tbody tr td.select-row input[type=checkbox]:checked:disabled, .grid thead tr th.select-all input[type=checkbox]:checked:disabled, .form-check-input :checked .disabled, .grid tbody tr td.select-row input[type=checkbox] :checked .disabled, .grid thead tr th.select-all input[type=checkbox] :checked .disabled {
   background: url('data:image/svg+xml;utf8,%3csvg id="tick" xmlns="http://www.w3.org/2000/svg" width="12.237" height="10.074" viewBox="0 0 12.237 10.074"%3e%3cpath id="tick-2" data-name="tick" d="M1.722,4.093A12.421,12.421,0,0,1,5.614,7.17a.72.72,0,0,0-.845.194L4.654,7.5A11.061,11.061,0,0,0,5.93,5.422,12.575,12.575,0,0,1,10.968.1a.891.891,0,0,1,1.2.38c.287,1.015-.419,2.115-.748,3-.979,2.3-3.047,3.791-4.534,5.7a2.419,2.419,0,0,1-2.115.882C2.5,9.5.86,7.438.053,5.293a1.1,1.1,0,0,1,1.669-1.2" transform="translate(0.001 0)" fill="rgb(255, 255, 255)"/%3e%3c/svg%3e') center center no-repeat;
   outline: none;
 }
-.form-check-input:checked + .checkbox-helper + .form-check-label {
+.form-check-input:checked + .checkbox-helper + .form-check-label, .grid tbody tr td.select-row input[type=checkbox]:checked + .checkbox-helper + .form-check-label, .grid thead tr th.select-all input[type=checkbox]:checked + .checkbox-helper + .form-check-label {
   color: #000;
   font-weight: bold;
 }
@@ -2938,6 +2938,7 @@ textarea.form-control-lg {
   background-position: right;
   background-origin: content-box;
   background-position-y: center;
+  background-color: rgba(109, 123, 123, 0.0509803922);
 }
 
 .dropdown-toggle::after {
@@ -3014,21 +3015,20 @@ div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a
   display: none !important;
 }
 
-.form-check-input {
+.form-check-input, .grid tbody tr td.select-row input[type=checkbox], .grid thead tr th.select-all input[type=checkbox] {
   opacity: 100% !important;
   background-size: auto;
 }
-.form-check-input:hover {
+.form-check-input:hover, .grid tbody tr td.select-row input[type=checkbox]:hover, .grid thead tr th.select-all input[type=checkbox]:hover {
   border-color: #000;
 }
-.form-check-input:checked:disabled, .form-check-input :checked .disabled {
+.form-check-input:checked:disabled, .grid tbody tr td.select-row input[type=checkbox]:checked:disabled, .grid thead tr th.select-all input[type=checkbox]:checked:disabled, .form-check-input :checked .disabled, .grid tbody tr td.select-row input[type=checkbox] :checked .disabled, .grid thead tr th.select-all input[type=checkbox] :checked .disabled {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"> <circle id="Ellipse_411" data-name="Ellipse 411" cx="8" cy="8" r="8" fill="#6d7b7b" /></svg>') center center no-repeat;
   outline: none;
   background-color: rgba(0, 0, 0, 0.3019607843);
 }
-.form-check-input:checked + .radio-helper + .form-check-label {
+.form-check-input:checked + .radio-helper + .form-check-label, .grid tbody tr td.select-row input[type=checkbox]:checked + .radio-helper + .form-check-label, .grid thead tr th.select-all input[type=checkbox]:checked + .radio-helper + .form-check-label {
   color: #000;
-  font-weight: bold;
 }
 
 .form-check-label {
@@ -7574,6 +7574,10 @@ input[type='radio'].handled {
   white-space: nowrap;
   width: 1%;
 }
+.grid thead tr th.select-all input[type=checkbox] {
+  height: 1.125rem;
+  width: 1.125rem;
+}
 .grid tbody tr td {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
@@ -7587,7 +7591,6 @@ input[type='radio'].handled {
   --bs-badge-font-size: 0.875rem;
   /*font-size:;*/
 }
-
 .grid-view h2, .grid-view .h2 {
   /*@extend .mt-2;
   @extend .mb-0;
@@ -7863,7 +7866,7 @@ input[type='radio'].handled {
 }
 
 .zoom-part-container {
-  z-index: 100;
+  z-index: 999;
 }
 .zoom-part-container button {
   width: 1.8rem;
@@ -7884,6 +7887,10 @@ input[type='radio'].handled {
 }
 .zoom-part-container .zoom-reset-btn {
   background: url(/lib/visualspec.shared.theme/dist/icons/undo.svg) center no-repeat;
+}
+
+:not(:root):fullscreen::backdrop {
+  --bs-white-rgb:255,255,255;
 }
 
 body .wrapper > .content main .page .left-panel {
@@ -8216,7 +8223,7 @@ body .wrapper > .content main .page .left-panel {
   opacity: 0 !important;
 }
 
-.opacity-25, .form-check-input:checked:disabled, .form-check-input :checked .disabled {
+.opacity-25, .form-check-input:checked:disabled, .form-check-input :checked .disabled, .grid thead tr th.select-all input[type=checkbox]:checked:disabled, .grid thead tr th.select-all input[type=checkbox] :checked .disabled, .grid tbody tr td.select-row input[type=checkbox]:checked:disabled, .grid tbody tr td.select-row input[type=checkbox] :checked .disabled {
   opacity: 0.25 !important;
 }
 
@@ -8228,7 +8235,7 @@ body .wrapper > .content main .page .left-panel {
   opacity: 0.75 !important;
 }
 
-.opacity-100, .form-check-input {
+.opacity-100, .form-check-input, .grid thead tr th.select-all input[type=checkbox], .grid tbody tr td.select-row input[type=checkbox] {
   opacity: 1 !important;
 }
 
@@ -8308,7 +8315,7 @@ body .wrapper > .content main .page .left-panel {
   position: static !important;
 }
 
-.position-relative, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.check-mark, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.text, .btn .icon-spec-search, .btn-action .icon-spec-search, .btn-action-i .icon-spec-search, .add-item-btn .icon-spec-search, .edit-item-btn .icon-spec-search, .delete-item-btn .icon-spec-search, .save-item-btn .icon-spec-search, .view-item-btn .icon-spec-search, .help-btn .icon-spec-search, .modal .modal-header .close .icon-spec-search, .grid tbody tr td.actions a[name=Edit] .icon-spec-search, .grid tbody tr td.actions button[name=Edit] .icon-spec-search, .grid tbody tr td.actions a[name=View] .icon-spec-search, .grid tbody tr td.actions button[name=View] .icon-spec-search, .grid tbody tr td.actions a[name=Delete] .icon-spec-search, .grid tbody tr td.actions button[name=Delete] .icon-spec-search, .grid-view .search .buttons-row .buttons button .icon-spec-search, .scope-treeview nav h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .scope-treeview nav .h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .zoom-part-container button .icon-spec-search {
+.position-relative, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.check-mark, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item span.text, .btn .icon-spec-search, .btn-action .icon-spec-search, .btn-action-i .icon-spec-search, .add-item-btn .icon-spec-search, .edit-item-btn .icon-spec-search, .delete-item-btn .icon-spec-search, .save-item-btn .icon-spec-search, .view-item-btn .icon-spec-search, .help-btn .icon-spec-search, .modal .modal-header .close .icon-spec-search, .grid tbody tr td.actions a[name=Edit] .icon-spec-search, .grid tbody tr td.actions button[name=Edit] .icon-spec-search, .grid tbody tr td.actions a[name=View] .icon-spec-search, .grid tbody tr td.actions button[name=View] .icon-spec-search, .grid tbody tr td.actions a[name=Delete] .icon-spec-search, .grid tbody tr td.actions button[name=Delete] .icon-spec-search, .grid-view .search .buttons-row .buttons button .icon-spec-search, .scope-treeview nav h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .scope-treeview nav .h4:first-child .scope-treeview__add-item:last-child .icon-spec-search, .zoom-part-container, .zoom-part-container button .icon-spec-search {
   position: relative !important;
 }
 
@@ -8876,7 +8883,7 @@ body .wrapper > .content main .page .left-panel {
   margin-bottom: auto !important;
 }
 
-.mt-0, .form-check-input {
+.mt-0, .form-check-input, .grid thead tr th.select-all input[type=checkbox], .grid tbody tr td.select-row input[type=checkbox] {
   margin-top: 0 !important;
 }
 
@@ -8888,11 +8895,11 @@ body .wrapper > .content main .page .left-panel {
   margin-top: 0.125rem !important;
 }
 
-.mt-1, .sidemenu-wrapper .sidebar ul.nav .projectName, .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link span, .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link span, .sidemenu-wrapper .sidebar ul.nav .nav-item .form-tabs-header.nav.nav-tabs .nav-link span, .form-tabs-header.nav.nav-tabs .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link span {
+.mt-1, .grid thead tr th.select-all input[type=checkbox], .sidemenu-wrapper .sidebar ul.nav .projectName, .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link span, .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link span, .sidemenu-wrapper .sidebar ul.nav .nav-item .form-tabs-header.nav.nav-tabs .nav-link span, .form-tabs-header.nav.nav-tabs .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link span {
   margin-top: 0.25rem !important;
 }
 
-.mt-2, .radio-list .form-check-input, .grid-view .buttons-row.top-buttons-row {
+.mt-2, .radio-list .form-check-input, .radio-list .grid thead tr th.select-all input[type=checkbox], .grid thead tr th.select-all .radio-list input[type=checkbox], .radio-list .grid tbody tr td.select-row input[type=checkbox], .grid tbody tr td.select-row .radio-list input[type=checkbox], .grid-view .buttons-row.top-buttons-row {
   margin-top: 0.5rem !important;
 }
 
@@ -8984,7 +8991,7 @@ body .wrapper > .content main .page .left-panel {
   margin-bottom: auto !important;
 }
 
-.ms-0 {
+.ms-0, .zoom-part-container button:first-child {
   margin-left: 0 !important;
 }
 
@@ -9550,7 +9557,7 @@ body .wrapper > .content main .page .left-panel {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-black, .form-check-input:checked:disabled, .form-check-input :checked .disabled, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.check-mark, .bs-actionsbox .btn-group .bs-select-all, .nav-tabs .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link.active, .form-tabs-header.nav.nav-tabs .nav-link.active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link:active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link:active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-item:active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .projectName:active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .nav-item.active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .active.projectName .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link .img-container img, .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link .img-container img, .sidemenu-wrapper .sidebar ul.nav .nav-item .form-tabs-header.nav.nav-tabs .nav-link .img-container img, .form-tabs-header.nav.nav-tabs .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link .img-container img {
+.bg-black, .form-check-input:checked:disabled, .form-check-input :checked .disabled, div.dropdown.show-tick div.dropdown-menu div[role=listbox] ul.dropdown-menu li a.dropdown-item.selected span.check-mark, .bs-actionsbox .btn-group .bs-select-all, .nav-tabs .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link.active, .form-tabs-header.nav.nav-tabs .nav-link.active, .grid thead tr th.select-all input[type=checkbox]:checked:disabled, .grid thead tr th.select-all input[type=checkbox] :checked .disabled, .grid tbody tr td.select-row input[type=checkbox]:checked:disabled, .grid tbody tr td.select-row input[type=checkbox] :checked .disabled, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link:active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link:active, .nav-tabs .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-tabs .projectName .nav-link.active, .sidemenu-wrapper .sidebar ul.nav .nav-item:active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .projectName:active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .nav-item.active .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .active.projectName .nav-link .img-container, .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link .img-container img, .sidemenu-wrapper .sidebar ul.nav .projectName .nav-link .img-container img, .sidemenu-wrapper .sidebar ul.nav .nav-item .form-tabs-header.nav.nav-tabs .nav-link .img-container img, .form-tabs-header.nav.nav-tabs .sidemenu-wrapper .sidebar ul.nav .nav-item .nav-link .img-container img {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
