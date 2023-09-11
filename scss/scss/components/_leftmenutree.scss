@@ -1,12 +1,11 @@
 ﻿
 .left-menu {
 
-    .card{
+    .card {
+        /* --#{$prefix}card-border-radius:#{$border-radius-lg};*/
+        --#{$prefix}card-spacer-x: 0;
 
-       /* --#{$prefix}card-border-radius:#{$border-radius-lg};*/
-        --#{$prefix}card-spacer-x : 0;
-
-        .card-header{
+        .card-header {
             @extend .fs-5;
             @extend .fs-5;
             @extend .pt-2;
@@ -16,98 +15,135 @@
             @extend .ps-4;
         }
 
-         .accordion{
+        .accordion {
             /*--#{$prefix}accordion-btn-icon-width:.75rem;*/
-            --#{$prefix}accordion-btn-padding-y:#{$spacer*.4};
-            --#{$prefix}accordion-body-padding-x : 0;
-            --#{$prefix}accordion-body-padding-y : #{$spacer*.4};
-            --#{$prefix}accordion-border-width:0;
-            --#{$prefix}accordion-border-radius : 0;
-            --#{$prefix}accordion-bg:#{$white};
-            --#{$prefix}accordion-active-bg:#{$white};
-            --#{$prefix}accordion-active-color:#{$black};
-            --#{$prefix}accordion-btn-focus-box-shadow : 0 0 0 0 #000000;
-            --#{$prefix}accordion-btn-bg : #{$white};
+           --#{$prefix}accordion-btn-padding-y: #{$spacer*.4};
+           --#{$prefix}accordion-body-padding-x: 0;
+           --#{$prefix}accordion-body-padding-y: #{$spacer*.4};
+           --#{$prefix}accordion-border-width: 0;
+           --#{$prefix}accordion-border-radius: 0;
+           --#{$prefix}accordion-bg: #{$white};
+           --#{$prefix}accordion-active-bg: #{$white};
+           --#{$prefix}accordion-active-color: #{$black};
+           --#{$prefix}accordion-btn-focus-box-shadow: 0 0 0 0 #000000;
+           --#{$prefix}accordion-btn-bg: #{$white};
 
-             .accordion-item{
-                 @extend .mb-2;
+            .accordion-item {
+                @extend .mb-2;
 
-                 .accordion-header{
+                .accordion-header {
                     /*@extend .ps-1;*/
                     @extend .pe-4;
                     @extend .align-items-start;
                     @extend .d-flex;
                     @extend .mb-0;
-                     &>a{
-                         @extend .fs-5;
-                         @extend .text-decoration-none;
-                         &:not(:last-child){
-                             @extend .flex-grow-1;
-                         }
-                     }
-                 }
 
-                 .accordion-button{
-                     @extend .d-inline-block;
-                     @extend .text-nowrap;
-                     @extend .text-truncate;
-                     &::before{
-                          @extend .d-inline-block;
-                          @extend .me-2;
-                          @extend .position-absolute;
-                          top:5px;
-                          width: var(--#{$prefix}accordion-btn-icon-width);
-                          height: var(--#{$prefix}accordion-btn-icon-width);
-                          margin-right: auto;
-                          content: "";
-                          background-image: var(--#{$prefix}accordion-btn-icon);
-                          background-repeat: no-repeat;
-                          background-size: var(--#{$prefix}accordion-btn-icon-width);
-                          @include transition(var(--#{$prefix}accordion-btn-icon-transition));
-                     }
-                     &::after{
-                         content:none;
-                     }
-                     &:not(.collapsed) {
-                        &::before {
-                          background-image: var(--#{$prefix}accordion-btn-active-icon);
-                          transform: var(--#{$prefix}accordion-btn-icon-transform);
+                    & > a {
+                        @extend .fs-5;
+                        @extend .text-decoration-none;
+
+                        &:not(:last-child) {
+                            @extend .flex-grow-1;
                         }
-                     }
-                 }
+                    }
 
-                 .accordion-body{
-                     ul{
-                         --#{$prefix}list-group-action-hover-bg:#{$yellow-100};
-                         @extend .list-group;
-                         @extend .list-group-flush;
+                    .btn-action-icon::before {
+                        top: 0 !important;
+                    }
+                }
 
-                         li{
+                .accordion-button {
+                    @extend .d-inline-block;
+                    @extend .text-nowrap;
+                    @extend .text-truncate;
+
+                    span {
+                        @extend .ms-3;
+                    }
+
+                    &::before {
+                        @extend .d-inline-block;
+                        @extend .me-2;
+                        @extend .position-absolute;
+                        top: 5px;
+                        width: var(--#{$prefix}accordion-btn-icon-width);
+                        height: $spacer;
+                        margin-right: auto;
+                        content: "";
+                        background-image: var(--#{$prefix}accordion-btn-icon);
+                        background-repeat: no-repeat;
+                        background-size: var(--#{$prefix}accordion-btn-icon-width);
+                        @include transition(var(--#{$prefix}accordion-btn-icon-transition));
+                    }
+
+                    &::after {
+                        content: none;
+                    }
+
+                    &:not(.collapsed) {
+                        &::before {
+                            background-image: var(--#{$prefix}accordion-btn-active-icon);
+                            transform: var(--#{$prefix}accordion-btn-icon-transform);
+                        }
+                    }
+                }
+
+                .accordion-body {
+                   > ul {
+                        --#{$prefix}list-group-action-hover-bg: #{$yellow-100};
+                        @extend .list-group;
+                        @extend .list-group-flush;
+
+                       > li {
                             @extend .list-group-item;
                             @extend .list-group-item-action;
-                            &>div{
+
+
+
+
+                            .node-title {
                                 @extend .d-flex;
                                 @extend .ms-4;
                                 @extend .ps-1;
                                 @extend .pe-2;
                                 @extend .justify-content-between;
                                 @extend .align-items-center;
-                                min-height : $spacer*2.8;
+                                min-height: $spacer*2.8;
 
-                                --#{$prefix}body-font-size:#{$font-size-xs};
-                                font-family:var(--#{$prefix}font-monospace);
-                                a{
-                                     @extend .text-decoration-none;
-                                     @extend .text-nowrap;
-                                     @extend .text-truncate;
+                                --#{$prefix}body-font-size: #{$font-size-xs};
+                                font-family: var(--#{$prefix}font-monospace);
+                                
+                                .btn-tree-node-title {
+                                    @extend .text-decoration-none;
+                                    @extend .text-nowrap;
+                                    @extend .text-truncate;
+                                    max-width:$spacer*11.25;
                                 }
+                                .dropdown-menu{
+                                    min-height:0px !important;
+                                }
+                                .node-toggle-actions {
+                                    @extend .me-3;
+                                    @extend .d-block;
+                                    background: url('/lib/visualspec.shared.theme/dist/icons/more.svg') center no-repeat padding-box;
+                                    width: 1.25rem;
+                                    height: 1.25rem;
+                                    min-width: 1.25rem;
+                                    transform: rotate(90deg);
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        transition: all .2s;
+                                        color: #57b5e2;
+                                    }
+                                }
+
                             }
-                         }
-                     }
 
-                 }
-             }
-         }
-
+                        }
+                    }
+                }
+            }
+        }
     }
 }

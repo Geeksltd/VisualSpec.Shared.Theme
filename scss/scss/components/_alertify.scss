@@ -20,3 +20,22 @@
     right: 24px;
     width: 383px;
 }
+
+.alertify {
+    border-radius: 1rem;
+
+    .alertify-buttons {
+        @extend .mx-0;
+        @extend .px-4;
+
+        .alertify-button-ok {
+            @extend .btn;
+            @extend .btn-primary;
+        }
+
+        .alertify-button-cancel {
+            @extend .btn;
+            @extend .btn-light;
+        }
+    }
+}

@@ -19,9 +19,15 @@
 
         a{
             @extend .page-link;
-            
-            width:28px;
-            height:28px;
+            @extend .p-0;
+            @extend .d-flex;
+            @extend .align-content-center;
+            @extend .justify-content-evenly;
+            @extend .align-items-center;
+            height: unset;
+            width: unset;
+            min-height: $spacer*2;
+            min-width: $spacer*2;
         }
     }
 }
@@ -29,8 +35,24 @@
     @extend .d-flex;
     @extend .float-end;
     @extend .align-items-center;
+    @extend .fs-5;
     label{
         @extend .text-nowrap;
         @extend .me-1;
+    }
+    .bootstrap-select {
+        width: auto;
+        height: $spacer*2;
+
+        .dropdown-toggle {
+            @extend .py-1;
+            @extend .border;
+            @extend .ps-3;
+            @extend .fw-bolder;
+            @extend .h6;
+            @extend .mb-0;
+            min-width: $spacer*4.25;
+            font-size: $font-size-base * 1.125;
+        }
     }
 }

@@ -5,6 +5,7 @@
     overflow-x:hidden;
     overflow-y:auto;
     min-width: 5.75rem;
+    @extend .bg-white;
 
     .sidebar {
         //background:$side-bar-background-color;
@@ -108,7 +109,7 @@
                 }
 
                 .nav-link {
-                    @extend .py-3;
+                    @extend .py-2;
 
                     .img-container{
                        @extend .py-1;
@@ -132,7 +133,6 @@
 
                     span {
                         @extend .d-block;
-                        @extend .mt-1;
                         font-family:$font-family-museo-300;
                     }
                 }
@@ -164,5 +164,9 @@
                  }
              }
         }
+    }
+    &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
     }
 }

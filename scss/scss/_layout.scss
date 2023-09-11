@@ -57,8 +57,11 @@
                             @extend .pb-1;
                             @extend .pe-3;
                             @extend .text-end;
+                            @extend .position-absolute;
+                            @extend .end-0;
                              p {
                                 @extend .text-muted;
+                                @extend .mb-0;
 
                                 a {
                                     @extend .text-muted;
