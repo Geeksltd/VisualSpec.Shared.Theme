@@ -45,10 +45,6 @@
                             @extend .flex-grow-1;
                         }
                     }
-
-                    .btn-action-icon::before {
-                        top: 0 !important;
-                    }
                 }
 
                 .accordion-button {
@@ -57,14 +53,14 @@
                     @extend .text-truncate;
 
                     span {
-                        @extend .ms-3;
+                        @extend .ms-4;
                     }
 
                     &::before {
                         @extend .d-inline-block;
                         @extend .me-2;
                         @extend .position-absolute;
-                        top: 5px;
+                        top: $spacer*.75;
                         width: var(--#{$prefix}accordion-btn-icon-width);
                         height: $spacer;
                         margin-right: auto;
@@ -83,6 +79,8 @@
                         &::before {
                             background-image: var(--#{$prefix}accordion-btn-active-icon);
                             transform: var(--#{$prefix}accordion-btn-icon-transform);
+                            
+                            top:$spacer*.25;
                         }
                     }
                 }
