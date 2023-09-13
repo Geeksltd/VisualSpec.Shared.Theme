@@ -1,10 +1,29 @@
 ﻿$check-box-size: 1.625rem;
 
-
 .bootstrap-select {
+
+    @extend .align-middle;
+    min-width: 220px;
+    @extend .form-control;
+    @extend .p-0;
+
+    &.show {
+        button.dropdown-toggle {
+            --#{$prefix}btn-border-width : #{$input-focus-width};
+            --#{$prefix}btn-border-color : #{$input-focus-border-color};
+            --#{$prefix}btn-color:#{$input-focus-color};
+        }
+    }
+
     button.dropdown-toggle {
-        border-radius: 0px;
-        //TODO: this line must change to relative path. this is becasuse cors
+        --#{$prefix}btn-color:#{$input-color};
+        --#{$prefix}btn-border-width : 0;
+        --#{$prefix}btn-font-family : #{$font-family-monospace};
+        --#{$prefix}btn-border-radius :0;
+        @extend .text-end;
+        @extend .d-inline-flex;
+        white-space: nowrap;
+        @extend .align-items-center;
         background-image: url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
         background-repeat: no-repeat;
         background-position: right;
@@ -12,12 +31,80 @@
         background-position-y: center;
         @extend .ps-3;
         @extend .pe-2;
-        background-color: $input-bg;
+        @extend .bg-transparent;
+        @extend .w-100;
+
+        &:focus {
+            --#{$prefix}btn-border-width : #{$input-focus-width};
+            --#{$prefix}btn-border-color : #{$input-focus-border-color};
+            --#{$prefix}btn-color:#{$input-focus-color};
+        }
+
+        .filter-option {
+            @extend .position-static;
+            @extend .d-inline;
+            @extend .p-0;
+        }
+    }
+
+   
+    & select {
+        @extend .p-0;
+        @extend .h-100;
+        @extend .opacity-0;
+        @extend .position-absolute;
+        @extend .bottom-0;
+        @extend .d-block;
+        @extend .p-0;
+        @extend .h-auto;
+        @extend .start-50;
+        width: 0.5px !important;
+        z-index: 0 !important;
+
+        &.mobile-device {
+            @extend .top-0;
+            @extend .start-0;
+            @extend .d-block;
+            @extend .w-100;
+            z-index: 2 !important;
+        }
+       
+    }
+
+    > .dropdown-menu {
+       
+        .dropdown-menu.inner {
+             @extend .p-0;
+             @extend .border-0;
+             li {
+                @extend .position-relative;
+             }
+        }
+
+        .bs-searchbox,
+        .bs-actionsbox,
+        .bs-donebutton {
+            @extend .px-2;
+            @extend .py-1;
+        }
+
+        .bs-actionsbox {
+            .btn-group {
+                button {
+                     @extend .w-50;
+                }
+            }
+        }
     }
 }
 
+select.bs-select-hidden,
+.bootstrap-select > select.bs-select-hidden,
+    select.selectpicker {
+    @extend .d-block;
+}
+
 .dropdown-toggle::after{
-     //TODO: this line must change to relative path. this is becasuse cors
     background-image:url(/lib/visualspec.shared.theme/dist/icons/arrow-down.svg);
     @extend .border-0;
 }
@@ -95,7 +182,7 @@ div.dropdown.show-tick {
     @extend .pb-2;
     @extend .mb-2;
     
-    input.form-control{
+    input.form-control {
         --#{$prefix}border-color: #{$gray-400}!important;
         --#{$prefix}background-color: #{$gray-50} !important;
         border-radius: 0px;
@@ -150,4 +237,3 @@ div.dropdown.show-tick {
         }
     }
 }
-

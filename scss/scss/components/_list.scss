@@ -89,39 +89,44 @@
     @extend .bg-white;
     @extend .rounded;
     @extend .card;
-    @extend .d-block;
+    @extend .d-grid;
     @extend .mb-4;
+    grid-template:repeat(5,auto) / repeat(2,auto);
 
     .grid-wrapper{
         @extend .table-responsive;
+        grid-column:span 2;
+        grid-row:3;
     }
 
     .buttons-row {
+
         &.top-buttons-row {
-            @extend .mt-2;
-            @extend .me-4;
-            @extend .float-end;
-            @extend .p-4;
-            &.top-buttons-row{
-               @extend .pt-3;
-               @extend .pe-3;
-               @extend .pb-0;
+             grid-column: 2;
+             grid-row:1;
+
+             @extend .mt-2;
+             @extend .me-4;
+             @extend .float-end;
+             @extend .p-4;
+            .buttons{
+               @extend .float-end;
             }
         }
     }
 
-    h2 {
-        /*@extend .mt-2;
-        @extend .mb-0;
-        @extend .p-4;*/
+   > h2 {
         @extend .card-header;
         @extend .bg-transparent;
+        grid-column: 1;
+        grid-row:1;
     }
 
     .search {
         @extend .card-body;
         @extend .align-items-center;
-        /*       @extend .d-flex;*/
+        grid-column:span 2;
+        grid-row:2;
         .form-group {
             & > .group-control {
                 @extend .col-12;
@@ -150,8 +155,4 @@
         }
     }
 
-    .button-row {
-        
-        /* @extend .card-footer;*/
-    }
 }

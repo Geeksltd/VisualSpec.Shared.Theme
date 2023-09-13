@@ -9,6 +9,7 @@
         & > .content {
             @extend .flex-grow-1;
             @extend .overflow-hidden;
+            min-height: 100%;
 
             main {
                 @extend .h-100;
