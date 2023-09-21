@@ -4,10 +4,6 @@
 .empty-list {
     @extend .ms-4;
 }
-.table td.fit, 
-.table th.fit {
-   
-}
 .grid {
     @extend .table;
     @extend .table-hover;
@@ -22,7 +18,7 @@
             th {
                 @extend .py-2;
                 line-height:$line-height-base * 1.165;
-                @extend .ps-4;
+                @extend .ps-3;
                 font-family:$font-family-museo-700;
                 font-size:$font-size-base * 1.125;
                 &.fit{
@@ -153,6 +149,12 @@
                 }
             }
         }
+        
+    }
+
+    .empty-list {
+        grid-row: 4;
+        grid-column: span 2;
     }
 
 }

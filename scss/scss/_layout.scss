@@ -51,16 +51,20 @@
                             .scroll-content {
                                 @extend .h-100;
                             }
+
+                            .content {
+                                min-height: 90%;
+                            }
                         }
 
                         footer {
-                            @extend .sticky-bottom;
+
                             @extend .pb-1;
                             @extend .pe-3;
                             @extend .text-end;
-                            @extend .position-absolute;
                             @extend .end-0;
-                             p {
+
+                            p {
                                 @extend .text-muted;
                                 @extend .mb-0;
 

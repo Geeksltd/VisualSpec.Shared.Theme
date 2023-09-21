@@ -16,7 +16,7 @@
     }
 
     button.dropdown-toggle {
-        --#{$prefix}btn-color:#{$input-color};
+        --#{$prefix}btn-color:#{$black};
         --#{$prefix}btn-border-width : 0;
         --#{$prefix}btn-font-family : #{$font-family-monospace};
         --#{$prefix}btn-border-radius :0;
@@ -56,10 +56,10 @@
         @extend .bottom-0;
         @extend .d-block;
         @extend .p-0;
-        @extend .h-auto;
         @extend .start-50;
         width: 0.5px !important;
         z-index: 0 !important;
+        border:none;
 
         &.mobile-device {
             @extend .top-0;
@@ -127,10 +127,11 @@ div.dropdown.show-tick {
         a.dropdown-item {
             span.check-mark {
                 @extend .position-relative;
+                @extend d-block;
                 border: 1px solid $gray-400;
                 width: 26px;
                 height: 26px;
-                display: inline-block;
+               
                 background: none;
                 left: 0px;
                 top: 2px;
