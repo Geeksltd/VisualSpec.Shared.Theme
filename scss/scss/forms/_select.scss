@@ -127,7 +127,7 @@ div.dropdown.show-tick {
         a.dropdown-item {
             span.check-mark {
                 @extend .position-relative;
-                @extend d-block;
+                @extend .d-block;
                 border: 1px solid $gray-400;
                 width: 26px;
                 height: 26px;
