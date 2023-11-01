@@ -83,6 +83,7 @@
         .dropdown-menu.inner {
              @extend .p-0;
              @extend .border-0;
+             @extend .position-relative;
              li {
                 @extend .position-relative;
              }
