@@ -18,7 +18,7 @@
             th {
                 @extend .py-2;
                 line-height:$line-height-base * 1.165;
-                @extend .ps-3;
+                @extend .ps-4;
                 font-family:$font-family-museo-700;
                 font-size:$font-size-base * 1.125;
                 &.fit{

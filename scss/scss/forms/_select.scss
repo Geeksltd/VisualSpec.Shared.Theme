@@ -13,6 +13,9 @@
             --#{$prefix}btn-border-color : #{$input-focus-border-color};
             --#{$prefix}btn-color:#{$input-focus-color};
         }
+         .dropdown-menu.show {
+            @extend .w-100;
+        }
     }
 
     button.dropdown-toggle {
@@ -44,6 +47,10 @@
             @extend .position-static;
             @extend .d-inline;
             @extend .p-0;
+            max-width:95%;
+            .filter-option-inner-inner{
+                @extend .text-truncate;
+            }
         }
     }
 
@@ -53,7 +60,7 @@
         @extend .h-100;
         @extend .opacity-0;
         @extend .position-absolute;
-        @extend .bottom-0;
+        @extend .bottom-25;
         @extend .d-block;
         @extend .p-0;
         @extend .start-50;
@@ -122,16 +129,23 @@ select.bs-select-hidden,
 }
 
 div.dropdown.show-tick {
-    padding-left:0px;
+    padding-left: 0px;
+
+    .dropdown-menu.inner {
+        @extend .position-relative;
+        .no-results{
+            @extend .text-center;
+        }
+    }
+
     div.dropdown-menu div[role="listbox"] ul.dropdown-menu li {
         a.dropdown-item {
             span.check-mark {
                 @extend .position-relative;
-                @extend .d-block;
+                @extend .d-inline-block;
                 border: 1px solid $gray-400;
                 width: 26px;
                 height: 26px;
-               
                 background: none;
                 left: 0px;
                 top: 2px;
@@ -166,13 +180,21 @@ div.dropdown.show-tick {
         }
     }
 }
- a.dropdown-item.selected{
+ a.dropdown-item{
+     cursor:pointer;
+ span.text{
+     @extend .text-truncate;
+    // @extend .w-100;
+    // @extend .d-inline-block; 
+     max-width:95%;
+ }
+ &.selected{
      span.text{
         @extend .fw-bold;
         @extend .text-black;
      }
  }
-
+}
 
 .bs-actionsbox{
    @extend .text-center;
