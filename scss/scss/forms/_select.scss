@@ -17,7 +17,10 @@
             @extend .w-100;
         }
     }
-
+    button.dropdown-toggle[title="Nothing selected"] {
+        @extend .fw-normal;
+         --#{$prefix}btn-color:#{$gray};
+     }
     button.dropdown-toggle {
         --#{$prefix}btn-color:#{$black};
         --#{$prefix}btn-border-width : 0;

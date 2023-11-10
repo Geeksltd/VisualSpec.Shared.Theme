@@ -88,15 +88,14 @@
                 .accordion-body {
                    > ul {
                         --#{$prefix}list-group-action-hover-bg: #{$yellow-100};
+                        --#{$prefix}list-group-action-active-bg: #{$yellow-100};
+                        
                         @extend .list-group;
                         @extend .list-group-flush;
 
                        > li {
                             @extend .list-group-item;
                             @extend .list-group-item-action;
-
-
-
 
                             .node-title {
                                 @extend .d-flex;
