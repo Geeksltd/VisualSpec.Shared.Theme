@@ -87,45 +87,48 @@
     @extend .card;
     @extend .d-grid;
     @extend .mb-4;
-    grid-template:repeat(5,auto) / repeat(2,auto);
+    grid-template: repeat(5,auto) / repeat(2,auto);
 
-    .grid-wrapper{
+    .grid-wrapper {
         @extend .table-responsive;
-        grid-column:span 2;
-        grid-row:3;
+        grid-column: span 2;
+        grid-row: 3;
     }
 
     .buttons-row {
 
         &.top-buttons-row {
-             grid-column: 2;
-             grid-row:1;
+            grid-column: 2;
+            grid-row: 1;
 
-             @extend .mt-2;
-             @extend .me-4;
-             @extend .float-end;
-             @extend .p-4;
-            .buttons{
-               @extend .float-end;
+            @extend .mt-2;
+            @extend .me-4;
+            @extend .float-end;
+            @extend .p-4;
+
+            .buttons {
+                @extend .float-end;
             }
         }
     }
 
-   > h2 {
+    > h2 {
         @extend .card-header;
         @extend .bg-transparent;
         grid-column: 1;
-        grid-row:1;
+        grid-row: 1;
     }
 
     .search {
         @extend .card-body;
         @extend .align-items-center;
-        grid-column:span 2;
-        grid-row:2;
+        grid-column: span 2;
+        grid-row: 2;
+
         .form-group {
             & > .group-control {
                 @extend .col-12;
+
                 & > input {
                     @extend .w-100;
                 }
@@ -135,21 +138,21 @@
         &.inline-search {
             @extend .d-flex;
             @extend .align-items-center;
-            .form-group{
+
+            .form-group {
                 @extend .mb-0;
             }
         }
 
-        .buttons-row{
-            .buttons{
-                button{
+        .buttons-row {
+            .buttons {
+                button {
                     @extend .btn;
                     @extend .btn-secondary;
                     @extend .ms-3;
                 }
             }
         }
-        
     }
 
     .empty-list {
@@ -157,4 +160,10 @@
         grid-column: span 2;
     }
 
+    .list-group {
+        @extend .h3;
+        @extend .border-0;
+        @extend .ps-4;
+        @extend .my-4;
+    }
 }

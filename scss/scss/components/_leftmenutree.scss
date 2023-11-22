@@ -95,7 +95,9 @@
                             @extend .list-group-item;
                             @extend .list-group-item-action;
 
-
+                            &.activated{
+                               background-color:var(--#{$prefix}list-group-action-hover-bg);
+                            }
 
 
                             .node-title {

@@ -1,4 +1,8 @@
-﻿.btn {
+﻿.buttons-row {
+    @extend .text-end;
+}
+
+.btn {
     --#{$prefix}btn-color: #{$white};
     --#{$prefix}btn-font-family:#{$font-family-museo-700};
 
