@@ -88,6 +88,8 @@
                 .accordion-body {
                    > ul {
                         --#{$prefix}list-group-action-hover-bg: #{$yellow-100};
+                        --#{$prefix}list-group-action-active-bg: #{$yellow-100};
+                        
                         @extend .list-group;
                         @extend .list-group-flush;
 
@@ -95,11 +97,14 @@
                             @extend .list-group-item;
                             @extend .list-group-item-action;
 
+<<<<<<< HEAD
                             &.activated{
                                background-color:var(--#{$prefix}list-group-action-hover-bg);
                             }
 
 
+=======
+>>>>>>> 239e70aecd3f6d00a3721c11a95466dd0b8a8469
                             .node-title {
                                 @extend .d-flex;
                                 @extend .ms-4;
