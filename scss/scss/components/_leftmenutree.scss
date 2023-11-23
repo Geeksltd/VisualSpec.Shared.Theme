@@ -97,15 +97,7 @@
                             @extend .list-group-item;
                             @extend .list-group-item-action;
 
-<<<<<<< HEAD
-                            &.activated{
-                               background-color:var(--#{$prefix}list-group-action-hover-bg);
-                            }
-
-
-=======
->>>>>>> 239e70aecd3f6d00a3721c11a95466dd0b8a8469
-                            .node-title {
+                          .node-title {
                                 @extend .d-flex;
                                 @extend .ms-4;
                                 @extend .ps-1;

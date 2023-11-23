@@ -1,7 +1,7 @@
 [
 	{
-		"outputFile": "dist/theme.css",
-		"inputFile": "src/theme.scss",
+		"outputFile": "dist/css/theme.css",
+		"inputFile": "src/scss/theme.scss",
 		"options": {
 			"sourceMap": false
 		}
