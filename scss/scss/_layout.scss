@@ -37,9 +37,17 @@
                     }
 
                     .right-panel {
-                        @extend .h-100;
                         @extend .pt-5;
                         @extend .mt-4;
+                    }
+
+                    .full-panel {
+                        @extend .pt-3;
+                    }
+
+                    .full-panel, .right-panel {
+
+                        @extend .h-100;
                         @extend .pe-4;
                         @extend .flex-grow-1;
                         @extend .overflow-hidden;
