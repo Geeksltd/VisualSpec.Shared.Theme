@@ -29,8 +29,7 @@
              th.select-all{
                 input[type=checkbox]{
                     @extend .form-check-input;
-                    height: $spacer * 1.125;
-                    width: $spacer * 1.125;
+                    @extend .fs-6;
                     @extend .mt-1;
                 }
             }
@@ -82,10 +81,16 @@
 }
 
 .grid-view {
+    @extend .d-grid;
+}
+.grid-view-grouped{
+    @extend .d-block;
+}
+
+.grid-view, .grid-view-grouped {
     @extend .bg-white;
     @extend .rounded;
     @extend .card;
-    @extend .d-grid;
     @extend .mb-4;
     grid-template: repeat(5,auto) / repeat(2,auto);
 
@@ -150,6 +155,13 @@
                     @extend .btn;
                     @extend .btn-secondary;
                     @extend .ms-3;
+                    @extend .text-end;
+                    padding-left: $spacer * 2.25;
+                    background-image: url(/lib/visualspec.shared.theme/dist/icons/search.svg);
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-position-x: $spacer * .875;
+                    background-size: $spacer*.875;
                 }
             }
         }

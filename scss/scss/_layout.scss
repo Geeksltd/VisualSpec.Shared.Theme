@@ -71,7 +71,8 @@
                             @extend .pe-3;
                             @extend .text-end;
                             @extend .end-0;
-
+                            @extend .position-static;
+                            bottom: 0;
                             p {
                                 @extend .text-muted;
                                 @extend .mb-0;
