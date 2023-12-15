@@ -143,7 +143,9 @@
         &.inline-search {
             @extend .d-flex;
             @extend .align-items-center;
-
+            @extend .flex-wrap;
+            @extend .flex-md-nowrap;
+            
             .form-group {
                 @extend .mb-0;
             }
