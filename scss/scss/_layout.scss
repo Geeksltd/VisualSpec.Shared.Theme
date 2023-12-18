@@ -39,6 +39,7 @@
                     .right-panel {
                         @extend .pt-5;
                         @extend .mt-4;
+                        @extend .pb-3;
                     }
 
                     .full-panel {
@@ -51,8 +52,7 @@
                         @extend .pe-4;
                         @extend .flex-grow-1;
                         @extend .overflow-hidden;
-                        @extend .pb-3;
-
+                       
                         .content-wrapper {
                             @extend .h-100;
 
