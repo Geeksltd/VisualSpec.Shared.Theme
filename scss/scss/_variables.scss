@@ -1533,7 +1533,7 @@ $list-group-item-padding-x:         $spacer !default;
 $list-group-item-bg-scale:          -80% !default;
 $list-group-item-color-scale:       40% !default;
 
-$list-group-hover-bg:               $gray-100 !default;
+$list-group-hover-bg:               $yellow-100 !default;
 $list-group-active-color:           $component-active-color !default;
 $list-group-active-bg:              $yellow-100 !default;
 $list-group-active-border-color:    $list-group-active-bg !default;
@@ -1541,7 +1541,7 @@ $list-group-active-border-color:    $list-group-active-bg !default;
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
 
-$list-group-action-color:           $yellow-100 !default;
+$list-group-action-color:           $black !default;
 $list-group-action-hover-color:     $list-group-action-color !default;
 
 $list-group-action-active-color:    $body-color !default;
@@ -1688,5 +1688,3 @@ $kbd-bg:                            var(--#{$prefix}body-color) !default;
 $nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, removing in v6
 
 $pre-color:                         null !default;
-
-
