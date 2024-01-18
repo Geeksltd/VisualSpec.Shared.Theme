@@ -4,35 +4,35 @@
 
 .btn {
     --#{$prefix}btn-color: #{$white};
-    --#{$prefix}btn-font-family:#{$font-family-museo-700};
+    --#{$prefix}btn-font-family: #{$font-family-museo-700};
 
-     .icon-spec-search{
-         @extend .position-relative;
-         top: ($spacer * .125);
-     }
-     &:focus-visible{
-         @if $enable-shadows {
+    .icon-spec-search {
+        @extend .position-relative;
+        top: ($spacer * .125);
+    }
+
+    &:focus-visible {
+        @if $enable-shadows {
             box-shadow: $btn-focus-box-shadow;
-        } @else {
-             box-shadow: $btn-focus-box-shadow;
         }
-     }
+        @else {
+            box-shadow: $btn-focus-box-shadow;
+        }
+    }
 }
 
-.btn-primary{
-     --#{$prefix}btn-hover-color: #{$white};
-     --#{$prefix}btn-hover-bg: #{$black};
-     --#{$prefix}btn-hover-border-color: #{$black};
+.btn-primary {
+    --#{$prefix}btn-hover-color: #{$white};
+    --#{$prefix}btn-hover-bg: #{$black};
+    --#{$prefix}btn-hover-border-color: #{$black};
+    --#{$prefix}btn-active-border-color: #{$gray};
+    --#{$prefix}btn-disabled-bg: #{$gray-300};
+    --#{$prefix}btn-disabled-border-color: #{$gray-200};
 
-     --#{$prefix}btn-active-border-color:#{$gray};
-
-     --#{$prefix}btn-disabled-bg:#{$gray-300};
-     --#{$prefix}btn-disabled-border-color:#{$gray-200};
-     &:focus{
-         --#{$prefix}btn-border-color:#{$gray};
-         --#{$prefix}btn-border-width:#{$btn-focus-border-width};
-     }
-     
+    &:focus {
+        --#{$prefix}btn-border-color: #{$gray};
+        --#{$prefix}btn-border-width: #{$btn-focus-border-width};
+    }
 }
 
 .btn-secondary {
@@ -52,201 +52,223 @@
 }
 
 
-.btn-danger{
-     --#{$prefix}btn-color: #{$danger};
-     --#{$prefix}btn-border-color: #{$danger};
-     --#{$prefix}btn-bg: #{$white};
+.btn-danger {
+    --#{$prefix}btn-color: #{$danger};
+    --#{$prefix}btn-border-color: #{$danger};
+    --#{$prefix}btn-bg: #{$white};
+    --#{$prefix}btn-hover-color: #{$white};
+    --#{$prefix}btn-hover-bg: #{$danger};
+    --#{$prefix}btn-hover-border-color: #{$danger};
+    --#{$prefix}btn-active-border-color: #{$gray};
+    --#{$prefix}btn-disabled-bg: #{$gray-200};
+    --#{$prefix}btn-disabled-border-color: #{$gray-200};
+    --#{$prefix}btn-disabled-color: #{$gray-600};
 
-     --#{$prefix}btn-hover-color: #{$white};
-     --#{$prefix}btn-hover-bg: #{$danger};
-     --#{$prefix}btn-hover-border-color: #{$danger};
-
-     --#{$prefix}btn-active-border-color:#{$gray};
-
-     --#{$prefix}btn-disabled-bg:#{$gray-200};
-     --#{$prefix}btn-disabled-border-color:#{$gray-200};
-     --#{$prefix}btn-disabled-color:#{$gray-600};
-     &:focus{
-         --#{$prefix}btn-border-color:#{$gray};
-         --#{$prefix}btn-border-width:#{$btn-focus-border-width};
-     }
+    &:focus {
+        --#{$prefix}btn-border-color: #{$gray};
+        --#{$prefix}btn-border-width: #{$btn-focus-border-width};
+    }
 }
 
 
 
-.btn-light{
-     --#{$prefix}btn-color: #{$black};
-     --#{$prefix}btn-border-color: #{$black};
-     --#{$prefix}btn-bg: #{$white};
+.btn-light {
+    --#{$prefix}btn-color: #{$black};
+    --#{$prefix}btn-border-color: #{$black};
+    --#{$prefix}btn-bg: #{$white};
+    --#{$prefix}btn-hover-color: #{$black};
+    --#{$prefix}btn-hover-bg: #{$gray-200};
+    --#{$prefix}btn-hover-border-color: #{$black};
+    --#{$prefix}btn-active-border-color: #{$gray};
+    --#{$prefix}btn-active-bg: #{$gray-500};
+    --#{$prefix}btn-disabled-bg: #{$white};
+    --#{$prefix}btn-disabled-border-color: #{$gray-400};
+    --#{$prefix}btn-disabled-color: #{$gray-400};
 
-     --#{$prefix}btn-hover-color: #{$black};
-     --#{$prefix}btn-hover-bg: #{$gray-200};
-     --#{$prefix}btn-hover-border-color: #{$black};
-
-     --#{$prefix}btn-active-border-color:#{$gray};
-     --#{$prefix}btn-active-bg:#{$gray-500};
-
-     --#{$prefix}btn-disabled-bg:#{$white};
-     --#{$prefix}btn-disabled-border-color:#{$gray-400};
-     --#{$prefix}btn-disabled-color:#{$gray-400};
-
-     &:focus{
-         --#{$prefix}btn-border-color:#{$gray};
-         --#{$prefix}btn-border-width:#{$btn-focus-border-width};
-     }
+    &:focus {
+        --#{$prefix}btn-border-color: #{$gray};
+        --#{$prefix}btn-border-width: #{$btn-focus-border-width};
+    }
 }
+
 .btn-action-i {
     @extend .btn-action;
-    i,img {
+
+    i, img {
         @extend .btn-action-icon;
     }
 }
-.btn-action{
-    /*@extend .rounded-circle;*/
+
+.btn-action {
     @extend .btn;
-    width:$spacer*2.28;
-    height:$spacer*2.28;
-    padding:$spacer*.2 !important;
+    width: $spacer*2.28;
+    height: $spacer*2.28;
+    padding: $spacer*.2 !important;
 }
+
 .btn-action-icon {
-     @extend .d-block;
-    -webkit-mask-position-x: center; 
+    @extend .d-block;
+    -webkit-mask-position-x: center;
     -webkit-mask-position-y: center;
     width: $spacer * 1.7 !important;
     height: $spacer* 1.7 !important;
 }
-.add-item-btn{
-    
-     --#{$prefix}btn-line-height : #{$spacer*1.75};
 
-        @extend .btn-action-i;
-        @extend .btn-secondary;
-            i,img {
-                //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/plus.svg);
-                -webkit-mask-repeat:no-repeat;
-                -webkit-mask-position:center;
-                //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(/lib/visualspec.shared.theme/dist/icons/plus.svg) no-repeat center;
-                mask-repeat:no-repeat;
-                mask-position:center;
-                background-color:$black;
-            }
-            &:hover{
-                i,img{
-                    background-color:$white;
-                }
-            }
-        text-decoration: none;
-}
-.edit-item-btn{
-        @extend .btn-action-i;
-        @extend .btn-secondary;
-            i,img {
-                  //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/edit.svg);
-                -webkit-mask-repeat:no-repeat;
-                //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(/lib/visualspec.shared.theme/dist/icons/edit.svg) no-repeat center;
-                mask-repeat:no-repeat;
-                mask-position:center;
-                background-color:$black;
-            }
-            &:hover{
-                 i,img{
-                    background-color:$white;
-                }
-            }
-        text-decoration: none;
-}
-.delete-item-btn{
-        @extend .btn-action-i;
-        @extend .btn-danger;
-            i,img {
-                  //TODO: this line must change to relative path. this is becasuse cors
-                   //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/bin.svg);
-                -webkit-mask-repeat:no-repeat;
-                //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(/lib/visualspec.shared.theme/dist/icons/bin.svg) no-repeat center;
-                mask-repeat:no-repeat;
-                mask-position:center;
-                background-color:$danger;
-            }
-            &:hover{
-                 i,img{
-                    background-color:$white;
-                }
-            }
-        text-decoration: none;
-}
-.save-item-btn{
-      @extend .btn-action-i;
-        @extend .btn-secondary;
-            i,img {
-                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/tick.svg);
-                -webkit-mask-repeat:no-repeat;
-                mask-image: url(/lib/visualspec.shared.theme/dist/icons/tick.svg) no-repeat center;
-                mask-repeat:no-repeat;
-                mask-position:center;
-                background-color:$black;
-            }
-            &:hover{
-                 i,img{
-                    background-color:$white;
-                }
-            }
-        text-decoration: none;
-        &.deactive {
-            background-color:$gray-200 !important;
-            border:unset;
-             i,img {
+.btn-secondary-action {
+    @extend .btn-action-i;
+    @extend .btn-secondary;
+    --#{$prefix}btn-line-height: #{$spacer*1.75};
 
-                        background-color:$gray-300 !important;
-             }
+    i, img {
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $black;
+    }
+
+    &:hover {
+        i, img {
+            background-color: $white;
         }
+    }
+
+    text-decoration: none;
 }
-.view-item-btn{
-        @extend .btn-action-i;
-        @extend .btn-secondary;
-            i,img {
-                  //TODO: this line must change to relative path. this is becasuse cors
-                   //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/eye.svg);
-                -webkit-mask-repeat:no-repeat;
-                //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(/lib/visualspec.shared.theme/dist/icons/eye.svg) no-repeat center;
-                mask-repeat:no-repeat;
-                mask-position:center;
-                background-color:$black;
-            }
-            &:hover{
-                 i,img{
-                    background-color:$white;
-                }
-            }
-        text-decoration: none;
+
+
+.add-item-btn {
+    @extend .btn-secondary-action;
+
+    i, img {
+        -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/plus.svg);
+        mask-image: url(/lib/visualspec.shared.theme/dist/icons/plus.svg) no-repeat center;
+    }
 }
-.help-btn{
-     @extend .btn-action-i;
-     @extend .bg-transparent;
-     @extend .border;
-     @extend .border-1;
-     @extend .border-black;
-            i,img {
-                  //TODO: this line must change to relative path. this is becasuse cors
-                -webkit-mask-image:url(/lib/visualspec.shared.theme/dist/icons/help.svg);
-                -webkit-mask-repeat:no-repeat;
-                //TODO: this line must change to relative path. this is becasuse cors
-                mask-image: url(/lib/visualspec.shared.theme/dist/icons/help.svg) no-repeat center;
-                mask-repeat:no-repeat;
-                mask-position:center;
-                background-color:$black;
-            }
-            &:hover{
-                 i,img{
-                    @extend .opacity-75;
-                }
-            }
-        text-decoration: none;
+
+.edit-item-btn {
+    @extend .btn-secondary-action;
+
+    i, img {
+        -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/edit.svg);
+        mask-image: url(/lib/visualspec.shared.theme/dist/icons/edit.svg) no-repeat center;
+    }
+}
+
+.copy-item-btn {
+    @extend .btn-secondary-action;
+
+    i, img {
+        -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/copy.svg);
+        mask-image: url(/lib/visualspec.shared.theme/dist/icons/copy.svg) no-repeat center;
+    }
+}
+
+.paste-item-btn {
+    @extend .btn-secondary-action;
+
+    i, img {
+        -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/paste.svg);
+        mask-image: url(/lib/visualspec.shared.theme/dist/icons/paste.svg) no-repeat center;
+    }
+}
+
+.delete-item-btn {
+    @extend .btn-action-i;
+    @extend .btn-danger;
+
+    i, img {
+        -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/bin.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-image: url(/lib/visualspec.shared.theme/dist/icons/bin.svg) no-repeat center;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $danger;
+    }
+
+    &:hover {
+        i, img {
+            background-color: $white;
+        }
+    }
+
+    text-decoration: none;
+}
+
+.save-item-btn {
+    @extend .btn-action-i;
+    @extend .btn-secondary;
+
+    i, img {
+        -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/tick.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-image: url(/lib/visualspec.shared.theme/dist/icons/tick.svg) no-repeat center;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $black;
+    }
+
+    &:hover {
+        i, img {
+            background-color: $white;
+        }
+    }
+
+    text-decoration: none;
+
+    &.deactive {
+        background-color: $gray-200 !important;
+        border: unset;
+
+        i, img {
+            background-color: $gray-300 !important;
+        }
+    }
+}
+
+.view-item-btn {
+    @extend .btn-action-i;
+    @extend .btn-secondary;
+
+    i, img {
+        -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/eye.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-image: url(/lib/visualspec.shared.theme/dist/icons/eye.svg) no-repeat center;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $black;
+    }
+
+    &:hover {
+        i, img {
+            background-color: $white;
+        }
+    }
+
+    text-decoration: none;
+}
+
+.help-btn {
+    @extend .btn-action-i;
+    @extend .bg-transparent;
+    @extend .border;
+    @extend .border-1;
+    @extend .border-black;
+
+    i, img {
+        -webkit-mask-image: url(/lib/visualspec.shared.theme/dist/icons/help.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-image: url(/lib/visualspec.shared.theme/dist/icons/help.svg) no-repeat center;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $black;
+    }
+
+    &:hover {
+        i, img {
+            @extend .opacity-75;
+        }
+    }
+
+    text-decoration: none;
 }
