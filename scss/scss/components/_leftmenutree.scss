@@ -40,10 +40,6 @@
                     & > a {
                         @extend .fs-5;
                         @extend .text-decoration-none;
-
-                        &:not(:last-child) {
-                            @extend .flex-grow-1;
-                        }
                     }
                 }
 
