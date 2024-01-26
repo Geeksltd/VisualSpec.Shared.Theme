@@ -152,7 +152,7 @@
 
         .buttons-row {
             .buttons {
-                button {
+                button[name='Search'] {
                     @extend .btn;
                     @extend .btn-secondary;
                     @extend .ms-3;
