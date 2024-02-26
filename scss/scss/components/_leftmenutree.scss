@@ -130,6 +130,13 @@
 
                             }
 
+                            &.active {
+                                .node-title {
+                                    .btn-tree-node-title{
+                                        @extend .fw-bold;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
