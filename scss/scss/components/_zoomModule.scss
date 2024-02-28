@@ -41,6 +41,5 @@
 }
 
 :not(:root):fullscreen::backdrop {
-    --#{$prefix}white-rgb:255,255,255;
-    @extend .bg-white;
+    background-color: $body-bg;
 }
